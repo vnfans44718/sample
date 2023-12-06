@@ -43,7 +43,7 @@ public class Quiz_231206 {
 		char E3 = 97;
 		char E4 = 122;
 		
-		boolean AlphabetUpper = (idFirstLetter >= E1 ) && (idFirstLetter <= E1 );
+		boolean AlphabetUpper = (idFirstLetter >= E1 ) && (idFirstLetter <= E2 );
 		boolean AlphabetCapital = (idFirstLetter >= E3 ) && (idFirstLetter <= E4 );
 		
 		
