@@ -13,19 +13,19 @@ public class DuoMemberInfoPrint {
 		boolean smoking;
 		double height;
 		char grade;
-		String face;
+		char face;
 		/*
 		 * 2.변수에 데이타(리터럴)대입
 		 */
 		num1 = 236514;
-		name = "홍길동";
-		num2 = "201212-3495039";
-		gender = '남';
+		name = "김미진";
+		num2 = "970317-3495039";
+		gender = '여';
 		num3 = 0;
-		smoking =  true;
-		height = 178.3;
+		smoking =  false;
+		height = 162.5;
 		grade = 'A';
-		face = "상(중)";
+		face = '중';
 		/*
 		 * 3.변수 데이타 출력
 		 */
