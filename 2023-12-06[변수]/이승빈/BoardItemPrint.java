@@ -34,8 +34,6 @@ public class BoardItemPrint {
 		System.out.println("   "+number1+"      "+title1+"     "+date1+"    "+writer1+"      "+view1);
 		System.out.println("   "+number2+"      "+title2+"     "+date2+"    "+writer2+"      "+view2);
 		System.out.println("----------------------------------------------------------------------------");
-		
-		
 
 	}
 
