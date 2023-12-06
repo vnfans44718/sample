@@ -2,7 +2,6 @@
 public class BoardItemPrint {
 
 	public static void main(String[] args) {
-		//게시물 -> 민원게시판/번호/제목/신청일시/작성자/조회수
 		int number1;
 		String title1;
 		String date1;
