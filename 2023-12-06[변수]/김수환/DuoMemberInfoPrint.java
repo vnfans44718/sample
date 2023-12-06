@@ -1,5 +1,5 @@
 
-public class uoMemberInfoPrint {
+public class DuoMemberInfoPrint {
 
 	public static void main(String[] args) {
 		/*
