@@ -1,7 +1,5 @@
 
 public class DuoMemberInfoPrint {
-
-	
 	public static void main(String[] args) {
 		
 		int mmnumber;
