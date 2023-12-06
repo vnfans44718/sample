@@ -1,0 +1,44 @@
+
+public class DuoMemberInfoPrint {
+
+	public static void main(String[] args) {
+		
+		int number = 123456;
+		String name = "김민섭";
+		String socialsecuritynumber = "123456-1234567";
+		char gender = '남';
+		int marriage = 0;
+		boolean smoking = false;
+		double height = 180.0;
+		char Grades = 'A';
+		char face = '하';
+		
+		
+		
+		System.out.println("출력예시1");
+		
+		System.out.println("*************************");
+		System.out.println("회원번호 : "+number);
+		System.out.println("이    름 : "+name);
+		System.out.println("주민번호 : "+socialsecuritynumber);
+		System.out.println("성    별 : "+gender);
+		System.out.println("결혼횟수 : "+marriage);
+		System.out.println("흡연여부 : "+smoking);
+		System.out.println("   키    : "+height);
+		System.out.println("학    점 : "+Grades);
+		System.out.println("용    모 : "+face);
+		System.out.println("*************************");
+		
+		
+		
+System.out.println("출력예시2");
+		
+		System.out.println("************************************************************************************************");
+		System.out.println("회원번호  이    름  주민번호  성    별  결혼횟수  흡연여부     키     학    점  용    모  ");
+		System.out.println("************************************************************************************************");
+		System.out.println(" "+number+"    "+name+socialsecuritynumber+"  "+ gender+"        " + marriage+"       "+smoking+"     "+height+"        "+Grades+"        "+face);
+		
+		
+		
+	}
+}
