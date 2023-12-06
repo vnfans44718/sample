@@ -1,0 +1,50 @@
+
+public class Ex {
+
+	public static void main(String[] args) {
+
+		
+		
+		System.out.println("----------윤년여부판단----------");
+		
+		int year = 2023;
+
+		
+		boolean range01 = (year%4 == 0) && (year%100 != 0);
+		boolean range02 = (year%400 == 0);
+		boolean range0 = range01 || range02;
+		boolean isLeapYear = range0;
+				
+		System.out.println(year+"의 윤년 여부:"+isLeapYear);
+		
+		
+		
+		System.out.println("----------한글여부판단----------");
+				
+		char h = '@';
+		
+		char h1 = '가';
+		char h2 = '힣';
+		
+		boolean range1 = (h >= h1) && (h <= h2);
+		boolean isHangul = range1;
+				
+		System.out.println("한글여부:"+isHangul);
+		
+		
+		
+		System.out.println("----------첫글자영어판단----------");
+				
+		char idFirstLetter = '@';
+		
+		char c1 = 'A';
+		char c2 = 'z';
+		
+		boolean range2 = (idFirstLetter >= c1) && (idFirstLetter <= c2);
+		boolean isValidIdFirstLetter = range2;
+
+		System.out.println(idFirstLetter+"의 적합성여부"+isValidIdFirstLetter);
+		
+	}
+
+}
