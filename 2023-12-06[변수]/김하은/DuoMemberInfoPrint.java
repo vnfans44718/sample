@@ -31,7 +31,6 @@ public class DuoMemberInfoPrint {
 		System.out.println("***************************************************************************************");
 		System.out.println(duoInfo);
 		
-		
 	}
 	
 }
