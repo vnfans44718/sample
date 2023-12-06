@@ -27,8 +27,8 @@ public class DuoMemberInfoPrint {
 	 System.out.println("결혼횟수 :"+결혼횟수);
 	 System.out.println("흡연여부 :"+흡연여부);
 	 System.out.println("키 :"+키);
-	 System.out.println("키 :"+학점);
-	 System.out.println("키 :"+용모);
+	 System.out.println("학점 :"+학점);
+	 System.out.println("용모 :"+용모);
 	 System.out.println("********************************************************************");
 	 System.out.println();
 	 System.out.println("********************************************************************");
