@@ -14,13 +14,13 @@ public class BoardItemPrint {
 		String writer2;
 		int view2;
 		
-		number1 = 001;
+		number1 = 1;
 		title1 = "서울시 내 행사 일정 관련 질의";
 		date1 = "2023-05-21";
 		writer1 = "김ㅇ훈";
 		view1 = 35;
 		
-		number2 = 002;
+		number2 = 2;
 		title2 = "서울시 도시정비사업 관련 질의";
 		date2 = "2023-08-13";
 		writer2 = "이ㅇ희";
