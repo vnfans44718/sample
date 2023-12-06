@@ -5,9 +5,9 @@ public class DuoMemberInfoPrint {
 		/*
 		 * 변수선언
 		 */
-		int usernumber;
+		int userNumber;
 		String name;
-		String registrationnumber;
+		String registrationNumber;
 		char gender;
 		int married;
 		String smoke;
@@ -17,9 +17,9 @@ public class DuoMemberInfoPrint {
 		/*
 		 * 변수에데이타 대입
 		 */
-		usernumber = 143524;
+		userNumber = 143524;
 		name = "이승빈";
-		registrationnumber = "123456-1234567";
+		registrationNumber = "123456-1234567";
 		gender = '남';
 		married = 0;
 		smoke = "false";
@@ -30,9 +30,9 @@ public class DuoMemberInfoPrint {
 		 * 변수내용출력
 		 */
 		System.out.println("**********<< 고객정보 >>**********");
-		System.out.println("1.회원번호 : "+usernumber);
+		System.out.println("1.회원번호 : "+userNumber);
 		System.out.println("2.이    름 : "+name);
-		System.out.println("3.주민번호 : "+registrationnumber);
+		System.out.println("3.주민번호 : "+registrationNumber);
 		System.out.println("4.성    별 : "+gender);
 		System.out.println("5.결혼횟수 : "+married);
 		System.out.println("6.흡연여부 : "+smoke);
