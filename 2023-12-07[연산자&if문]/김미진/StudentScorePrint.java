@@ -21,15 +21,15 @@ public class StudentScorePrint {
 		 */
 		num1 = 1;
 		name1 = "김경호";
-		kor1 = 42;
-		eng1 = 56;
-		math1 = 78;
+		kor1 = 93;
+		eng1 = 89;
+		math1 = 100;
 
 		num2 = 2;
 		name2 = "김경수";
-		kor2 = 45;
-		eng2 = 53;
-		math2 = 76;
+		kor2 = 88;
+		eng2 = 97;
+		math2 = 88;
 
 		/*
 		 * 학생2명의 국어, 영어, 수학점수의 유효성체크 - 100점이 넘는 수나 음수가 입력되면 메세지를 출력하고 return(프로그램종료)한다.
