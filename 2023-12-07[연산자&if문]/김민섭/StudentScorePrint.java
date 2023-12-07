@@ -83,12 +83,6 @@ public class StudentScorePrint {
 			grade2 = 'F';
 		}
 		
-		if (average1 > average2) {
-			sukcha1 = 1;
-			sukcha2 = 2;
-		}else {
-			sukcha1 = 2;
-			sukcha2 = 1;
 		}
 		
 		System.out.println("--------------------학생 성적출력--------------------");
