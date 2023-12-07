@@ -83,7 +83,7 @@ public class StudentScorePrint {
 			grade2 = 'F';
 		}
 		
-		}
+		
 		
 		System.out.println("--------------------학생 성적출력--------------------");
 		System.out.printf("%s  %s  %s  %s  %s  %s  %s  %s  %s  \n", "학번","이름","국어","영어","수학","총점","평균","평점","석차");
