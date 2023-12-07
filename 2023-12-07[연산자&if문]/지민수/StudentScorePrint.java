@@ -29,7 +29,7 @@ public class StudentScorePrint {
 		 */
 		
 		if (!(kor1>=0 && kor1<=100 && kor2>=0 && kor2<=100 && eng1>=0 && eng1<=100
-			&&	eng2>=0 && eng2<=100 && math1>=0 && math1<=100 && math2>=0 && math2<=100)) {
+			&& eng2>=0 && eng2<=100 && math1>=0 && math1<=100 && math2>=0 && math2<=100)) {
 			System.out.println("유효하지 않은 점수입니다.");
 			return;
 		}
