@@ -22,11 +22,11 @@ public class DuoMemberInfoPrint {
 		height=163.4;
 		score='A';
 		look="중";
-		duoInfo=mmnumber+"       "+name+"   "+regNo+"  "+gender+"      "+marriage+"          "+smoking+"      "+height+"    "+score+"      "+look;
+		duoInfo=mmnumber+"\t\t"+name+"\t\t"+regNo+"\t\t"+gender+"\t"+marriage+"\t\t"+smoking+"\t\t"+height+"\t"+score+"\t"+look;
 		
-		System.out.println("***************************************************************************************");
-		System.out.println("회원번호   이름     주민번호        성별   결혼횟수   흡연여부   키       학점   용모");
-		System.out.println("***************************************************************************************");
+		System.out.println("*************************************************************************************************************************");
+		System.out.println("회원번호\t이름\t\t주민번호\t\t성별\t결혼횟수\t흡연여부\t키\t학점\t용모");
+		System.out.println("*************************************************************************************************************************");
 		System.out.println(duoInfo);
 		
 	}
