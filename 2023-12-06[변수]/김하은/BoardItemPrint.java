@@ -15,11 +15,11 @@ public class BoardItemPrint {
 		name="김*학";
 		date="2023.12.06";
 		view=1;
-		seoulBoard=number+"   "+title+"    "+name+"      "+date+"    "+view;
-		
-		System.out.println("------------------------------------------------------------");
-		System.out.println("순번    제목                 작성자     작성일        조회수");		
-		System.out.println("------------------------------------------------------------");
+		seoulBoard=number+"\t"+title+"\t"+name+"\t"+date+"\t"+view;
+	
+		System.out.println("-----------------------------------------------------------------");
+		System.out.println("순번\t제목\t\t\t작성자\t작성일\t\t조회수");		
+		System.out.println("-----------------------------------------------------------------");
 		System.out.println(seoulBoard);
 
 	}
