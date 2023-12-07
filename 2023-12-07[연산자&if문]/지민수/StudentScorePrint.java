@@ -33,38 +33,7 @@ public class StudentScorePrint {
 			System.out.println("유효하지 않은 점수입니다.");
 			return;
 		}
-		
-		/*
-		 if (!(kor1 >= 0 && kor1 <= 100)) {
-			System.out.println("유효하지 않은 점수입니다.");
-			return;
-		
-		} 
-		else if (!(kor2 >= 0 && kor2 <= 100)) {
-			System.out.println("유효하지 않은 점수입니다.");
-			return;
-			
-		} 
-		else if (!(eng1 >= 0 && eng1 <= 100)) {
-			System.out.println("유효하지 않은 점수입니다.");
-			return;
-			
-		} 
-		else if (!(eng2 >= 0 && eng2 <= 100)) {
-			System.out.println("유효하지 않은 점수입니다.");
-			return;
-			
-		} 
-		else if (!(math1 >= 0 && math1 <= 100)) {
-			System.out.println("유효하지 않은 점수입니다.");
-			return;
-			
-		} 
-		else if (!(math2 >= 0 && math2 <= 100)) {	 
-			System.out.println("유효하지 않은 점수입니다.");
-		return;
-		}*/
-		
+				
 		/*
 		 * 학생 2명의 기본데이터(번호, 이름, 국어, 영어, 수학)를 이용해서 총점, 평균, 평점, 계산 후 대입 (석차는 0을 대입)
 		 */
