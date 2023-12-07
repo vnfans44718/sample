@@ -40,8 +40,8 @@ public class StudentScorePrint {
 		
 		tot1 = kor1+eng1+math1;
 		tot2 = kor2+eng2+math2;
-		avg1 = tot1/3;		
-		avg2 = tot2/3;		
+		avg1 = tot1/3.0;		
+		avg2 = tot2/3.0;		
 		
 		if(avg1>=90) {
 			grade1 = 'A';
