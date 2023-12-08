@@ -1,1 +1,12 @@
 a
+
+
+
+char eng='a';
+		while(eng<='z') {
+			System.out.printf("%c",eng);
+			eng++;
+			if((eng-96)%5==0) {
+				System.out.print("\n");
+			}
+		}
