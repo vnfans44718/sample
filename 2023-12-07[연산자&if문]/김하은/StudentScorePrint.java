@@ -1,6 +1,7 @@
 public class StudentScorePrint {
 
 	public static void main(String[] args) {
+		
 		/*
 		 * 성적관리에서 학생2명 데이타를 담을 변수선언
 		 * 	- 번호, 이름, 국어, 영어, 수학, 총점, 평균, 평점(A(90~100),B(80~89),C(70~79),D(60~69),F(0~59)), 석차
@@ -48,8 +49,7 @@ public class StudentScorePrint {
 		 * 학생2명의 국어, 영어, 수학점수의 유효성체크
 		 *   - 100점이 넘는 수나 음수가 입력되면 메세지를 출력하고 return(프로그램종료)한다.
 		 */
-		
-			
+				
 		if (kor1>100 || kor1<0) {
 			System.out.println(kor1+" 점은 유효한 점수가 아닙니다");
 			return;
@@ -74,7 +74,6 @@ public class StudentScorePrint {
 			System.out.println(math2+" 점은 유효한 점수가 아닙니다");
 			return;
 		} 
-		
 		
 		/*
 		 * 학생 2명의 기본데이터(번호, 이름, 국어, 영어, 수학)를 이용해서
