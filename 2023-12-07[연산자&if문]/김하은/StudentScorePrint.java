@@ -31,17 +31,17 @@ public class StudentScorePrint {
 		 */
 		
 		num1=1;
-		name1="김경호";
-		kor1=42;
-		eng1=56;
+		name1="남다연";
+		kor1=92;
+		eng1=96;
 		math1=78;
 		rank1=0;
 		
 		num2=2;
-		name2="김경수";
-		kor2=45;
-		eng2=53;
-		math2=76;
+		name2="최예나";
+		kor2=75;
+		eng2=83;
+		math2=96;
 		rank2=0;
 		
 		/*
@@ -73,7 +73,7 @@ public class StudentScorePrint {
 		if (math2>100 || math2<0) {
 			System.out.println(math2+" 점은 유효한 점수가 아닙니다");
 			return;
-		}
+		} 
 		
 		
 		/*
@@ -131,8 +131,6 @@ public class StudentScorePrint {
 		System.out.printf("%4d %s  %d   %d   %d  %d  %.1f   %c    %d \n", 
 				num2, name2, kor2, eng2, math2, sum2, avg2, grade2, rank2);
 		System.out.println("----------------------------------------------");
-		
-		
 		
 	}
 
