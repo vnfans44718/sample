@@ -1,0 +1,14 @@
+package com.itwill01.field;
+
+/*
+ * 성적처리를위해 필요한 학생객체를 만들기위한클래스정의(틀,타입)
+ */
+
+public class Student {
+
+	int number, kor, eng, math, tot, sukcha;	//정수형 멤버변수 선언
+	String name;							//문자열형 멤버변수 선언
+	char grade;							//문자형 멤버변수 선언
+	double avg;								//실수형 멤버변수 선언
+
+}
