@@ -7,8 +7,8 @@ package com.itwill01.field;
 public class Student {
 
 	int number, kor, eng, math, tot, sukcha;	//정수형 멤버변수 선언
-	String name;							//문자열형 멤버변수 선언
-	char grade;							//문자형 멤버변수 선언
-	double avg;								//실수형 멤버변수 선언
+	String name;					//문자열형 멤버변수 선언
+	char grade;					//문자형 멤버변수 선언
+	double avg;					//실수형 멤버변수 선언
 
 }
