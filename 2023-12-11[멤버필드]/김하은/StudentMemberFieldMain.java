@@ -75,13 +75,13 @@ public class StudentMemberFieldMain {
 		 2   김경수   45   53   76   334  34.8  A   2  
 		-----------------------------------------------
 		*/
-		System.out.printf("-------------------학생 성적 출력------------------\n");
-		System.out.printf("%s %4s %s %s %s %4s %4s %2s %s \n",
+		System.out.printf("-------------------학생 성적 출력--------------------\n");
+		System.out.printf("%s %6s %s %s %s %4s %4s %2s %s \n",
 				"학번","이름","국어","영어","수학","총점","평균","평점","석차");
-		System.out.printf("---------------------------------------------------\n");
-		System.out.printf("%4s %s %4d %4d %4d %6d %6.1f %4c %4d \n",
+		System.out.printf("-----------------------------------------------------\n");
+		System.out.printf("%4s %5s %4d %4d %4d %6d %6.1f %4c %4d \n",
 				student1.no,student1.name,student1.kor,student1.eng,student1.math,student1.sum,student1.avg,student1.score,student1.rank);
-		System.out.printf("%4s %s %4d %4d %4d %6d %6.1f %4c %4d \n",
+		System.out.printf("%4s %5s %4d %4d %4d %6d %6.1f %4c %4d \n",
 				student2.no,student2.name,student2.kor,student2.eng,student2.math,student2.sum,student2.avg,student2.score,student2.rank);
 	}
 }
