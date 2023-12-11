@@ -14,7 +14,6 @@ public class StudentMemberFieldMain {
 		/*
 		 * 학생객체의 기본데이타(번호,이름,국어,영어,수학)대입(2명)
 		 */
-		student1 = new Student();
 		student1.no = "1";
 		student1.name = "남다연";
 		student1.kor = 95;
