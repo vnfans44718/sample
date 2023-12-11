@@ -6,19 +6,20 @@ public class StudentMemberFieldMain {
 		/*
 		 * 학생객체 2명생성
 		 */
-		Student std1;	// 학생1 객체 생성
-		Student std2;	// 학생2 객체 생성
+		Student std1;	// Student 클래스를 사용하여 학생객체1을 생성
+		std1 = new Student();
+		Student std2;	// Student 클래스를 사용하여 학생객체2를 생성
+		std2 = new Student();
 		/*
 		 * 학생객체의 기본데이타(번호,이름,국어,영어,수학)대입(2명)
 		 */
-		std1 = new Student();	// Student 클래스를 사용하여 학생객체를 생성 후 학생1의 기본데이타를 std1 변수에 대입
+		// 학생1의 기본데이타를 std1 멤버변수에 대입
 		std1.no = 1;
 		std1.name = "이피자";
 		std1.kor = 56;
 		std1.eng = 74;
 		std1.math = 88;
-
-		std2 = new Student();	// Student 클래스를 사용하여 학생객체를 생성 후 학생2의 기본데이타를 std2 변수에 대입
+		// 학생2의 기본데이타를 std2 멤버변수에 대입
 		std2.no = 2;
 		std2.name = "박버거";
 		std2.kor = 63;
