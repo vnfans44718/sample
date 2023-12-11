@@ -91,7 +91,5 @@ public class ForStar {
 			}
 			System.out.print("\n");
 		}
-
 	}
-
 }
