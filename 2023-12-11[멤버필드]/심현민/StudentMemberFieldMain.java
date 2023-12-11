@@ -23,8 +23,8 @@ public class StudentMemberFieldMain {
 		}
 		studentMember1.total = studentMember1.kor + studentMember1.math + studentMember1.eng;
 		studentMember2.total = studentMember2.kor + studentMember2.math + studentMember2.eng;
-		studentMember1.avg = (studentMember1.kor + studentMember1.math+ studentMember1.eng) / 3.0;
-		studentMember2.avg = (studentMember2.kor + studentMember2.math + studentMember2.eng) / 3.0;
+		studentMember1.avg = (double) (studentMember1.kor + studentMember1.math+ studentMember1.eng) / 3;
+		studentMember2.avg = (double) (studentMember2.kor + studentMember2.math + studentMember2.eng) / 3;
 
 		if (studentMember1.avg >= 90) {
 			studentMember1.grade = 'A';
