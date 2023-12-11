@@ -1,4 +1,4 @@
-package com.itwill00.field;
+package com.itwill01.field;
 /*
  * 성적처리를위해 필요한 학생객체를 만들기위한클래스정의(틀,타입)
  */
@@ -9,7 +9,7 @@ public class Student {
 	 *    를 저장할 멤버필드(변수) 선언
 	 */
 	int no;			// 학생 개체에 번호를 저장할 멤버변수 no 선언
-	String name;		// 학생 개체에 이름을 저장할 멤버변수 name 선언
+	String name;	// 학생 개체에 이름을 저장할 멤버변수 name 선언
 	int kor;		// 학생 개체에 국어점수를 저장할 멤버변수 kor 선언
 	int eng;		// 학생 개체에 영어점수를 저장할 멤버변수 eng 선언
 	int math;		// 학생 개체에 수학점수를 저장할 멤버변수 math 선언
