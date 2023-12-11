@@ -38,7 +38,7 @@ public class StudentMemberFieldMain {
 		student2.avg = student2.sum/3.0;
 		
 		if(student1.avg>=90) {
-			student1.score ='A';
+			student1.score = 'A';
 		}else if(student1.avg>=80) {
 			student1.score = 'B';
 		}else if(student1.avg>=70) {
@@ -50,7 +50,7 @@ public class StudentMemberFieldMain {
 		}
 		
 		if(student2.avg>=90) {
-			student2.score ='A';
+			student2.score = 'A';
 		}else if(student2.avg>=80) {
 			student2.score = 'B';
 		}else if(student2.avg>=70) {
