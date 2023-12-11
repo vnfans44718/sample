@@ -1,4 +1,4 @@
-package com.itwill00.Field;
+package com.itwill00.field;
 
 public class StudentMemberFieldMain {
 
