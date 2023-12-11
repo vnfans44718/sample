@@ -37,25 +37,25 @@ public class StudentMemberFieldMain {
 		student2.sum = student2.kor+student2.eng+student2.math;
 		student2.avg = student2.sum/3.0;
 		
-		if(student1.avg>=90) {
+		if(student1.avg >= 90) {
 			student1.score = 'A';
-		}else if(student1.avg>=80) {
+		}else if(student1.avg >= 80) {
 			student1.score = 'B';
-		}else if(student1.avg>=70) {
+		}else if(student1.avg >= 70) {
 			student1.score = 'C';
-		}else if(student1.avg>=60) {
+		}else if(student1.avg >= 60) {
 			student1.score = 'D';
 		}else {
 			student1.score = 'F';
 		}
 		
-		if(student2.avg>=90) {
+		if(student2.avg >= 90) {
 			student2.score = 'A';
-		}else if(student2.avg>=80) {
+		}else if(student2.avg >= 80) {
 			student2.score = 'B';
-		}else if(student2.avg>=70) {
+		}else if(student2.avg >= 70) {
 			student2.score = 'C';
-		}else if(student2.avg>=60) {
+		}else if(student2.avg >= 60) {
 			student2.score = 'D';
 		}else {
 			student2.score = 'F';
