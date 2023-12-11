@@ -7,7 +7,9 @@ public class StudentMemberFieldMain {
 		 * 학생객체 2명생성
 		 */
 		Student student1;
+		student1 = new Student();
 		Student student2;
+		student2 = new Student();
 		
 		/*
 		 * 학생객체의 기본데이타(번호,이름,국어,영어,수학)대입(2명)
@@ -20,7 +22,6 @@ public class StudentMemberFieldMain {
 		student1.math = 80;
 		student1.rank = 1;
 		
-		student2 = new Student();
 		student2.no = "2";
 		student2.name = "최예나";
 		student2.kor = 88;
