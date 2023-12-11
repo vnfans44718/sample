@@ -55,10 +55,10 @@ public class StudentMemberFieldMain {
 		System.out.printf("--------------학생 성적출력-------------------%n");
 		System.out.printf("%s %3s %3s %s %s %s %s %s %s%n", "학번", "이름", "국어", "영어", "수학", "총점", "평균", "평점", "석차");
 		System.out.printf("-----------------------------------------------%n");
-		System.out.printf("%3d %4s %4d %4d %4d %4d %4.1f %3c %4d%n", st1.no, st1.name, st1.kor, st1.eng, st1.math,
-				st1.tot, st1.avg, st1.grade, 1);
-		System.out.printf("%3d %4s %4d %4d %4d %4d %4.1f %3c %4d%n", st2.no, st2.name, st2.kor, st2.eng, st2.math,
-				st2.tot, st2.avg, st2.grade, 1);
+		System.out.printf("%3d %4s %4d %4d %4d %4d %4.1f %3c %4d%n",
+				st1.no, st1.name, st1.kor, st1.eng, st1.math,st1.tot, st1.avg, st1.grade, 1);
+		System.out.printf("%3d %4s %4d %4d %4d %4d %4.1f %3c %4d%n",
+				st2.no, st2.name, st2.kor, st2.eng, st2.math,st2.tot, st2.avg, st2.grade, 1);
 	}
 
 }
