@@ -124,7 +124,7 @@ public class CalculatorMain {
 	 - 키가 170 이고 몸무게가 50 킬로인 여성 이름은 Alice 이고 나이는 요가담당이며 26세입니다.
 
  2. 음식점에 배달 주문이 들어왔습니다.
-       
+       ```
        주문 접수 번호 : 202011020003
        주문 핸드폰 번호 : 01023450001
        주문 집 주소 : 서울시 강남구 역삼동 111-333
@@ -132,8 +132,8 @@ public class CalculatorMain {
        주문 시간 : 130258
        주문 가격 : 35000
        메뉴 번호 : 0003
- 
+      ```
   3. 쇼핑몰의 제품1개
-  4. 
+ 
       ![image](https://github.com/2023-12-JAVA-DEVELOPER-149/01.JAVA_FUNDMENTAL_PRACTICE/assets/75401545/4852a1d4-dad6-4d6d-aad7-54830046204a)
 
