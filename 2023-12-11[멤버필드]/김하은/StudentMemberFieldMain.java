@@ -83,7 +83,5 @@ public class StudentMemberFieldMain {
 				student1.no,student1.name,student1.kor,student1.eng,student1.math,student1.sum,student1.avg,student1.score,student1.rank);
 		System.out.printf("%4s %s %4d %4d %4d %6d %6.1f %4c %4d \n",
 				student2.no,student2.name,student2.kor,student2.eng,student2.math,student2.sum,student2.avg,student2.score,student2.rank);
-
 	}
-
 }
