@@ -133,4 +133,7 @@ public class CalculatorMain {
        주문 가격 : 35000
        메뉴 번호 : 0003
  
-  3. 
+  3. 쇼핑몰의 제품1개
+  4. 
+      ![image](https://github.com/2023-12-JAVA-DEVELOPER-149/01.JAVA_FUNDMENTAL_PRACTICE/assets/75401545/4852a1d4-dad6-4d6d-aad7-54830046204a)
+
