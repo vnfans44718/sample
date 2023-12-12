@@ -53,18 +53,18 @@ public class Student {
 	 * 평점계산메쏘드
 	 */
 	public void calGrade() {
-				if(this.avg >= 90) {
-					this.grade = 'A';
-				}else if(this.avg >= 80) {
-					this.grade = 'B';
-				}else if(this.avg >= 70) {
-					this.grade = 'C';
-				}else if(this.avg >= 60) {
-					this.grade = 'D';
-				}else {
-					this.grade = 'F';
-				}
-				return;
+		if (this.avg >= 90) {
+			this.grade = 'A';
+		} else if (this.avg >= 80) {
+			this.grade = 'B';
+		} else if (this.avg >= 70) {
+			this.grade = 'C';
+		} else if (this.avg >= 60) {
+			this.grade = 'D';
+		} else {
+			this.grade = 'F';
+		}
+		return;
 	}
 	
 	/*
