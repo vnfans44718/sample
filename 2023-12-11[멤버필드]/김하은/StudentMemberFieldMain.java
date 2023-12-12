@@ -14,14 +14,14 @@ public class StudentMemberFieldMain {
 		/*
 		 * 학생객체의 기본데이타(번호,이름,국어,영어,수학)대입(2명)
 		 */
-		student1.no = "1";
+		student1.no = 1;
 		student1.name = "남다연";
 		student1.kor = 95;
 		student1.eng = 97;
 		student1.math = 80;
 		student1.rank = 1;
 		
-		student2.no = "2";
+		student2.no = 2;
 		student2.name = "최예나";
 		student2.kor = 88;
 		student2.eng = 80;
@@ -79,9 +79,9 @@ public class StudentMemberFieldMain {
 		System.out.printf("%s %6s %s %s %s %4s %4s %2s %s \n",
 				"학번","이름","국어","영어","수학","총점","평균","평점","석차");
 		System.out.printf("-----------------------------------------------------\n");
-		System.out.printf("%4s %5s %4d %4d %4d %6d %6.1f %4c %4d \n",
+		System.out.printf("%4d %5s %4d %4d %4d %6d %6.1f %4c %4d \n",
 				student1.no,student1.name,student1.kor,student1.eng,student1.math,student1.sum,student1.avg,student1.score,student1.rank);
-		System.out.printf("%4s %5s %4d %4d %4d %6d %6.1f %4c %4d \n",
+		System.out.printf("%4d %5s %4d %4d %4d %6d %6.1f %4c %4d \n",
 				student2.no,student2.name,student2.kor,student2.eng,student2.math,student2.sum,student2.avg,student2.score,student2.rank);
 	}
 }
