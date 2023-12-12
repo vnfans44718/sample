@@ -1,5 +1,8 @@
 package com.itwill01.method;
-
+/*
+   >> [Option] 객체 구현 및 출력
+      2. 음식점 배달 정보 출력
+ */
 public class DeliveryOderMethodMain {
 
 	public static void main(String[] args) {

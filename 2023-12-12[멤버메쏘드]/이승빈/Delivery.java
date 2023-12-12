@@ -1,5 +1,8 @@
 package com.itwill01.method;
-
+/*
+   >> [Option] 객체 구현 및 출력
+      2. 음식점 배달 정보 객체 구현
+ */
 public class Delivery {
 
 	// 멤버변수 선언(접수번호, 핸드폰번호, 집주소, 날짜, 시간, 가격, 메뉴번호)

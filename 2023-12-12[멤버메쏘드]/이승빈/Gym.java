@@ -1,5 +1,8 @@
 package com.itwill01.method;
-
+/*
+   >> [Option] 객체 구현 및 출력
+      1. 헬스장 강사 정보 객체 구현
+ */
 public class Gym {
 
 	// 멤버변수 선언(키, 몸무게, 성별, 이름, 나이, 보직)

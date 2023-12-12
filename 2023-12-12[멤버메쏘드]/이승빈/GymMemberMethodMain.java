@@ -1,5 +1,8 @@
 package com.itwill01.method;
-
+/*
+   >> [Option] 객체 구현 및 출력
+      1. 헬스장 강사 정보 출력
+ */
 public class GymMemberMethodMain {
 
 	public static void main(String[] args) {
