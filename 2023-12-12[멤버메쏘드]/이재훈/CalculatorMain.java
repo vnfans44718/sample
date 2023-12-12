@@ -1,4 +1,4 @@
-package com.itwill00.veriable;
+package com.itwill01.method;
 
 public class CalculatorMain {
 	public static void main(String[] args) {
