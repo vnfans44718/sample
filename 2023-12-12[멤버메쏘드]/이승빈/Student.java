@@ -25,7 +25,7 @@ public class Student {
 	/*
 	 * 기본데이타(번호,이름,국어,영어,수학)멤버변수에대입하는메쏘드
 	 */
-	public void setBasicData(int no, String name, int kor, int eng, int math) {
+	public void setStdBasicData(int no, String name, int kor, int eng, int math) {
 		this.no = no;
 		this.name = name;
 		this.kor = kor;
@@ -79,7 +79,7 @@ public class Student {
 	}
 
 	// 학생정보출력메쏘드
-	public void studentInfoPrint() {
+	public void stdInfoPrint() {
 		System.out.printf("%3d %4s %4d %4d %4d %4d %4.1f %3c %4d\n", this.no, this.name, this.kor, this.eng, this.math,
 				this.tot, this.avg, this.grade, this.rank);
 	}
