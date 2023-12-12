@@ -29,9 +29,9 @@ public class StudentMemberMethodMain {
 		student2.calAvg();
 		student3.calAvg();
 		
-		student1.calRank();
-		student2.calRank();
-		student3.calRank();
+		student1.calGrade();
+		student2.calGrade();
+		student3.calGrade();
 		
 		/*
 		 * 학생데이타 출력메쏘드 호출(3명)
