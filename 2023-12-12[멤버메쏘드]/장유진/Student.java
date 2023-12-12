@@ -57,7 +57,7 @@ public class Student {
 	 * 평점계산메쏘드
 	 */
 	
-	public void calRank() {
+	public void calGrade() {
 		if (this.avg >= 90) {
 			this.grade = 'A';
 		} else if (this.avg >= 80) {
