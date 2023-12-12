@@ -7,28 +7,51 @@
 	
 	- 회원객체 
 	    속성: 회원번호,회원이름...
+     
 	- 제품객체   
 	    속성:  제품번호,제품가격...
-		    
+     
+	-  카트객체   
+	    속성:  제품번호,제품가격...	    
 
 
 ##### 2. 객체를 프로그램에서 실제 사용할 수 있는 형태인 클래스(Class)로 구현[클래스정의]
 ```java
+
+       package com.itwill.shop;
 	public class Member{
 		int no;
 		int name
 		int address;
-		void print(){
+		public void print(){}
+	}
+  
+	package com.itwill.shop;
+	public class Product {
+		int no;
+		int title;
+		int price;
+	
+		public void print() {
+	
 		}
 	}
 
-	public class Product{
-		int no;
-		int title
-		int price;
-		void print(){
+   	package com.itwill.shop;
+	public class Order {
+		/*
+		 * 주문번호
+		 * 주문날짜
+		 * 주문금액
+		 * 배송지
+		 * 
+		 */
+
+		public void print() {
+	
 		}
 	}
+
 
 ..
 
