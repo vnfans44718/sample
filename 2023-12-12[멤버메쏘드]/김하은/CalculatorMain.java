@@ -11,6 +11,5 @@ public class CalculatorMain {
 		System.out.println(result);
 		result=calculator.div(45435,34);
 		System.out.println(result);
-		
 	}
 }
