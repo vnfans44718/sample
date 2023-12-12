@@ -82,10 +82,4 @@ public class Student {
 				this.no,this.name,this.kor,this.eng,this.math,this.tot,this.avg,this.grade,this.rank);
 	}
 	
-	
-	
-	
-	
-	
-	
 }
