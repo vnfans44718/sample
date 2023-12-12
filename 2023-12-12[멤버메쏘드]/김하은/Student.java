@@ -25,7 +25,7 @@ public class Student {
 	/*
 	 * 기본데이타(번호,이름,국어,영어,수학)멤버변수에대입하는메쏘드
 	 */
-	public void dataInput(int no, String name, int kor, int eng, int math) {
+	public void basicData(int no, String name, int kor, int eng, int math) {
 		this.no = no;
 		this.name = name;
 		this.kor = kor;
@@ -70,14 +70,14 @@ public class Student {
 	/*
 	 * 출력메쏘드
 	 */
-	public void headerOutput() {
+	public void headerPrint() {
 		System.out.printf("-------------------학생 성적 출력-----------------------\n");
 		System.out.printf("%s %6s %4s %s %s %4s %4s %2s %s \n",
 				"학번","이름","국어","영어","수학","총점","평균","평점","석차");
 		System.out.printf("--------------------------------------------------------\n");
 	}
 	
-	public void dataOutput() {
+	public void dataPrint() {
 		System.out.printf("%4d %5s %6d %4d %4d %6d %6.1f %4c %4d \n",
 				this.no,this.name,this.kor,this.eng,this.math,this.tot,this.avg,this.grade,this.rank);
 	}
