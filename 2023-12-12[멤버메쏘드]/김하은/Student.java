@@ -31,6 +31,7 @@ public class Student {
 		this.kor = kor;
 		this.eng = eng;
 		this.math = math;
+		return;
 	}
 	
 	/*
@@ -80,5 +81,6 @@ public class Student {
 	public void dataPrint() {
 		System.out.printf("%4d %5s %6d %4d %4d %6d %6.1f %4c %4d \n",
 				this.no,this.name,this.kor,this.eng,this.math,this.tot,this.avg,this.grade,this.rank);
+		return;
 	}
 }
