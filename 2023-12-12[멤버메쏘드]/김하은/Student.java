@@ -21,18 +21,18 @@ public class Student {
 	char grade;
 	int rank;
 	
-	// 멤버메쏘드 선언
+	// 멤버메쏘드 선언 메쏘드는 동작기능이므로 동사 관련 이름 붙이기
 	/*
 	 * 기본데이타(번호,이름,국어,영어,수학)멤버변수에대입하는메쏘드
 	 */
-	public void basicData(int no, String name, int kor, int eng, int math) {
+	public void inputData(int no, String name, int kor, int eng, int math) {
 		this.no = no;
 		this.name = name;
 		this.kor = kor;
 		this.eng = eng;
 		this.math = math;
 		return;
-	}
+	} 
 	
 	/*
 	 * 총점계산메쏘드
