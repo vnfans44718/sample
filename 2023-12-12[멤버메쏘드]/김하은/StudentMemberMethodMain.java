@@ -39,7 +39,9 @@ public class StudentMemberMethodMain {
 		 */
 		student1.headerPrint();
 		student1.dataPrint();
+		student2.headerPrint();
 		student2.dataPrint();
+		student3.headerPrint();
 		student3.dataPrint();
 	}
 }
