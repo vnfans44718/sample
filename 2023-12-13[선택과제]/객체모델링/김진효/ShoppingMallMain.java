@@ -18,6 +18,8 @@ public class ShoppingMallMain {
 		product.product(234522, "피코크 밀푀유나베", 11880, "\"보기도 좋고 먹기도 좋은 전골요리, 밀푀유나베\"");
 		cart.cart("2023-06-11");
 		order.order(1);
+
+		order.calTotalPrice();
 		
 		cart.setCart(member, product, order);
 		
