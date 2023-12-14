@@ -74,6 +74,7 @@ public class Student {
 				this.tot, this.avg, this.grade, this.rank);
 	}
 
+	//get set
 	public int getNo() {
 		return no;
 	}
