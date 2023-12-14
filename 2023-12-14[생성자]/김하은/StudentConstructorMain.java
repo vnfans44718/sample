@@ -27,9 +27,9 @@ public class StudentConstructorMain {
 		student3.print();
 		
 		student1.setName("윤태희");
-		System.out.print("\n");
+		System.out.println();
 		student1.print();
-		System.out.print("\n");
+		System.out.println();
 		System.out.println("윤태희의 총점: "+student1.getTot());
 		System.out.println("윤태희의 평점: "+student1.getGrade());
 	}
