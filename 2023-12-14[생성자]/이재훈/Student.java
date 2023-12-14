@@ -1,4 +1,4 @@
-package study;
+package com.itwill02.constructor;
 
 public class Student {
 
