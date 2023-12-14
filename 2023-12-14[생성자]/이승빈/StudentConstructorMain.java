@@ -20,15 +20,15 @@ public class StudentConstructorMain {
 		 학생평점계산 메쏘드 호출(3명)
 		 */
 		std1.calculateTot();
-		std1.calculateAvg();
-		std1.calculateGrade();
-
 		std2.calculateTot();
-		std2.calculateAvg();
-		std2.calculateGrade();
-		
 		std3.calculateTot();
+
+		std1.calculateAvg();
+		std2.calculateAvg();
 		std3.calculateAvg();
+		
+		std1.calculateGrade();
+		std2.calculateGrade();
 		std3.calculateGrade();
 		
 		/*
@@ -52,13 +52,11 @@ public class StudentConstructorMain {
 		
 		System.out.println();
 		System.out.println("***** 학생 student1 의 총점데이타 반환받은후 메인블록에서출력 *****");
-		int std1Tot = std1.getTot();
-		System.out.printf("이일번 학생의 총점: %d %s\n", std1Tot, "점");
+		System.out.printf("이일번 학생의 총점: %d %s\n", std1.getTot(), "점");
 		
 		System.out.println();
 		System.out.println("***** 학생 student1 의 학점데이타 반환받은후 메인블록에서출력 *****");
-		int std1Grade = std1.getGrade();
-		System.out.printf("이일번 학생의 학점: %c\n", std1Grade);
+		System.out.printf("이일번 학생의 학점: %c\n", std1.getGrade());
 	}
 
 }
