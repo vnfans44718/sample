@@ -2,7 +2,7 @@ package study;
 
 public class Student {
 
-	// 캡슐화를 하세요
+	// 캡슐화 하세요
 	private int no; //학번
 	private String name; //이름
 	private int kor; //국어
