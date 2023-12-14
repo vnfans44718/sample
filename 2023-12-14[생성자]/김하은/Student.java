@@ -136,5 +136,4 @@ package com.itwill02.constructor;
 		public void setRank(int rank) {
 			this.rank = rank;
 		}
-		
 	}

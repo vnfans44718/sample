@@ -33,5 +33,4 @@ public class StudentConstructorMain {
 		System.out.println("윤태희의 총점: "+student1.getTot());
 		System.out.println("윤태희의 평점: "+student1.getGrade());
 	}
-
 }
