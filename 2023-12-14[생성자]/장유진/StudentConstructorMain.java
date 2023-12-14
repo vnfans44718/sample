@@ -48,6 +48,51 @@ public class StudentConstructorMain {
 		student1.print();
 		System.out.println("student1의 총점: " + student1.getTot());
 		System.out.println("student1의 평점: " + student1.getGrade());
-	
+
+
+		
+		/***** 혼자 해본 석차 노가다 *****/
+		
+		if (student1.getTot() >= student2.getTot() && student1.getTot() >= student3.getTot()) { // st1 1등
+			student1.setRank(1);
+			if (student2.getTot() > student3.getTot()) {
+				student2.setRank(2);
+				student3.setRank(3);
+			} else if (student2.getTot() == student3.getTot()) {
+				student2.setRank(2);
+				student3.setRank(2);
+			} else {
+				student2.setRank(3);
+				student3.setRank(2);
+			}
+		}
+		
+		if (student2.getTot() >= student1.getTot() && student2.getTot() >= student3.getTot()) { // st2 1등
+			student2.setRank(1);
+			if (student1.getTot() > student3.getTot()) {
+				student1.setRank(2);
+				student3.setRank(3);
+			} else if (student2.getTot() == student3.getTot()) {
+				student1.setRank(2);
+				student3.setRank(2);
+			} else {
+				student1.setRank(3);
+				student3.setRank(2);
+			}
+		}
+		
+		if (student3.getTot() >= student2.getTot() && student3.getTot() >= student1.getTot()) { // st3 1등
+			student3.setRank(1);
+			if (student2.getTot() > student1.getTot()) {
+				student2.setRank(2);
+				student1.setRank(3);
+			} else if (student2.getTot() == student1.getTot()) {
+				student2.setRank(2);
+				student1.setRank(2);
+			} else {
+				student2.setRank(3);
+				student1.setRank(2);
+			}
+		}
 	}
 }
