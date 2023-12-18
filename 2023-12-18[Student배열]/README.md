@@ -64,7 +64,7 @@
 			this.avg = (((int) ((this.tot / 3.0) * 100.0)) / 100.0);
 		}
 
-		public char calculateGrade() {
+		public void calculateGrade() {
 
 			if (this.avg >= 90)
 				this.grade = 'A';
@@ -77,7 +77,7 @@
 			else
 				this.grade = 'F';
 
-			return grade;
+			return;
 		}
 		
 		
