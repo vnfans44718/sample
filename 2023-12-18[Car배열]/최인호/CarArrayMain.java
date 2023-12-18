@@ -28,14 +28,17 @@ public class CarArrayMain {
 		System.out.println("남은 주차 구획수 >> " + num);
 
 		System.out.println("4.입차");
-		Car car = new Car("7777", 9);
+
+		Car[] car = { new Car("7777", 9), new Car("8888", 10) };
+		int j = 0;
 		for (int i = 0; i < carArray.length; i++) {
 			if (carArray[i] == null) {
-				carArray[i] = car;
-				break;
+				carArray[i] = car[j];
+				j++;
 			}
+			if (j == car.length)
+				break;
 		}
-
 		System.out.println("5.차량번호 7789번  차한대 정보출력");
 		for (int i = 0; i < carArray.length; i++) {
 			if (carArray[i] != null && carArray[i].getNo() == "7789") {
