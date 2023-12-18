@@ -122,7 +122,7 @@
 			System.out.println("3.남은주차구획수");
 			
 			
-			System.out.println("4.입차");
+			System.out.println("4.입차 (차량번호 7777번 9시입차) ");
 			/*
 			 * 1.차량객체생성
 			 * 2.빈자리찾아서대입
