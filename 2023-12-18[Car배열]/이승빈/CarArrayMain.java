@@ -1,7 +1,5 @@
 package com.itwill04.array.car;
 
-import java.util.Iterator;
-
 public class CarArrayMain {
 
 	public static void main(String[] args) {
