@@ -1,4 +1,4 @@
-package com.itwill04.array.car;
+package com.itwill04.array.student;
 
 public class StudentArrayMain {
 	public static void main(String[] args) {
