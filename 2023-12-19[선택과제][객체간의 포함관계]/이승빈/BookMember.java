@@ -33,9 +33,9 @@ public class BookMember {
 		this.book = book;
 	}
 	
-	public void print() {
+	public void memberPrint() {
 		System.out.printf("회원번호: %d\t 회원이름: %s\t 전화번호: %s\n", no, name, phoneNum);
-		book.print();
+		book.dvdPrint();
 	}
 
 	public int getNo() {

@@ -22,8 +22,8 @@ public class BookLibraryMain {
 		/*
 		 * 회원정보출력(회원정보와 회원이 빌린책들 정보출력)
 		 */
-		bookMem1.print();
-		bookMem2.print();
+		bookMem1.memberPrint();
+		bookMem2.memberPrint();
 		
 	}
 }

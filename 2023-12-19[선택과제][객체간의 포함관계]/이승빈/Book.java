@@ -31,7 +31,7 @@ public class Book {
 		this.detail = detail;
 	}
 	
-	public void print() {
+	public void dvdPrint() {
 		System.out.printf("<< 빌린책 리스트 >>\n" + "책번호: %d\t 책제목: %s\t 책분류: %s\t 책설명: %s\n", no, title, genre, detail);
 		System.out.println();
 	}
