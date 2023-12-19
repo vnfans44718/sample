@@ -40,7 +40,6 @@ public class StudentArrayMain {
 		}
 		
 		Arrays.sort(totArray);
-		
 		for (int i = 0; i < totArray.length; i++) {
 			for (int j = 0; j < totArray.length; j++) {
 				if (totArray[i] == students[j].getTot()) {
