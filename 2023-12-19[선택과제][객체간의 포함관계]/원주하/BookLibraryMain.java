@@ -20,13 +20,10 @@ public class BookLibraryMain {
 
 		/*
 		 * 회원이 책들 대여
-		 * 
-		 */
+		 * 책객체참조변수를 회원의 멤버변수에대입
+		*/
 
 		member1.setRent(book);
-
-		/* 책객체참조변수를 회원의 멤버변수에대입
-		*/
 		member1.getRent();
 
 		/*
