@@ -34,13 +34,14 @@ public class StudentArrayMain {
 		System.out.println("2. 전체학생 총점으로 석차계산");
 		for (int i=0; i<students.length; i++) {
 			for (int j=0; j<students.length; j++) {
+				if(i == j) continue;
 				if (students[i].getTot() < students[j].getTot()) {
 					students[i].setRank(students[j].getRank()+1);
 				}
 			}
 		}
-		System.out.println();
-	
+		System.out.println(); //이때 i는 나고 j는 나랑 비교하는 애임
+		
 		/*
 		 * 3. 전체학생출력
 		 */
@@ -55,13 +56,14 @@ public class StudentArrayMain {
 		 * 4. 번호3번 학생한명 출력
 		 */
 		System.out.println("4.번호3번 학생한명 출력  ");
-		for(int i=0; i <students.length; i++) {
+		for (int i=0; i <students.length; i++) {
 			if (students[i].getNo() == 3) {
 				students[i].print();
 				break;
 			}
 		}
 		System.out.println();
+		
 		/*
 		 * 5. 학점A인 학생들 출력
 		 */
@@ -81,7 +83,7 @@ public class StudentArrayMain {
 				if (students[j].getTot() < students[j+1].getTot()) {
 					Student tempStudent = students[j+1];
 					students[j+1] = students[j];
-					students[j] = tempStudent;
+					students[j] = tempStudent; //이때 i는 비교회수 j는 나랑 나랑 비교하는 애 
 				}
 			}
 		}
@@ -91,5 +93,4 @@ public class StudentArrayMain {
 		}
 	}
 }
-	
 
