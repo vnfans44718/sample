@@ -55,7 +55,8 @@ public class CarArrayMain {
 				carArray[i].print();
 			}
 		}
-		
+
+	
 		System.out.println("6.입차시간 10시이후 차량여러대 찾아서 정보출력");
 		for (int i = 0; i < carArray.length; i++) {
 			if (carArray[i] != null && carArray[i].getInTime() >= 10) {
