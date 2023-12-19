@@ -34,22 +34,21 @@ public class StudentArrayMain {
 		System.out.println("2. 전체학생 총점으로 석차계산");
 		for (int i=0; i<students.length; i++) {
 			for (int j=0; j<students.length; j++) {
-				if(i == j) continue;
 				if (students[i].getTot() < students[j].getTot()) {
 					students[i].setRank(students[j].getRank()+1);
 				}
 			}
 		}
-		System.out.println(); //이때 i는 나고 j는 나랑 비교하는 애임
+		System.out.println(); 
 		
 		/*
 		 * 3. 전체학생출력
 		 */
 		System.out.println("3. 전체학생출력 ");
 		Student.headerPrint();
-		for (int i=0; i<students.length; i++) {
-			students[i].print();
-		}
+		for (Student student : students) 
+			student.print();
+		
 		System.out.println();
 		
 		/*
@@ -83,14 +82,13 @@ public class StudentArrayMain {
 				if (students[j].getTot() < students[j+1].getTot()) {
 					Student tempStudent = students[j+1];
 					students[j+1] = students[j];
-					students[j] = tempStudent; //이때 i는 비교회수 j는 나랑 나랑 비교하는 애 
+					students[j] = tempStudent; 
 				}
 			}
 		}
 		Student.headerPrint();
-		for (int i=0; i<students.length; i++) {
-			students[i].print();
-		}
+		for (Student student : students) 
+			student.print();
 	}
 }
 
