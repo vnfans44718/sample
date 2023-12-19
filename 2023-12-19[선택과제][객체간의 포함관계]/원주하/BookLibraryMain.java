@@ -7,8 +7,7 @@ public class BookLibraryMain {
 		/*
 		 * 회원객체생성
 		 */
-		Book[] book1 = new Book[1];
-		BookMember member1 = new BookMember(1234, "김경호", "0101234", book1);
+		BookMember member1 = new BookMember(1234, "김경호", "0101234", null);
 
 		/*
 		 * 책객체생성
