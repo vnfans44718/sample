@@ -10,11 +10,6 @@ public class BookMember {
 	public BookMember() {
 	}
 	
-	public static void headerPrint() {
-		System.out.println("----------------------------------------------------------------------------------------------------------------");
-		System.out.println("회원번호"+"\t"+"회원이름"+"\t"+"전화번호"+"\t"+"빌린책");
-		System.out.println("----------------------------------------------------------------------------------------------------------------");
-	}
 	
 	
 	public BookMember(int memberNo, String memberName, String memberPhone, Book book) {
@@ -25,6 +20,12 @@ public class BookMember {
 		this.book = book;
 	}
 
+	public static void headerPrint() {
+		System.out.println("----------------------------------------------------------------------------------------------------------------");
+		System.out.println("회원번호"+"\t"+"회원이름"+"\t"+"전화번호"+"\t"+"빌린책");
+		System.out.println("----------------------------------------------------------------------------------------------------------------");
+	}
+	
 	public void memberPrint() {
 		System.out.print(memberNo+"\t"+"\t"+memberName+"\t"+"\t"+memberPhone);
 		book.bookPrint();
