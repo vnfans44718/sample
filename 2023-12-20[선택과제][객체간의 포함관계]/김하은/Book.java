@@ -16,9 +16,17 @@ public class Book {
 		this.bookGenre = bookGenre;
 		this.bookDetail = bookDetail;
 	}
+
+	public static void bookheaderPrint() {
+		System.out.println();
+		System.out.println();
+		System.out.println("------------------------------------------------------------------");
+		System.out.println("빌린 책");
+		System.out.println("------------------------------------------------------------------");
+	}
 	
 	public void bookPrint() {
-		System.out.println("\t"+bookNo+"\t"+bookTitle+"\t"+bookGenre+"\t"+bookDetail);
+		System.out.println(bookNo+"\t"+bookTitle+"\t"+bookGenre+"\t"+bookDetail);
 	}
 
 	public int getBookNo() {
