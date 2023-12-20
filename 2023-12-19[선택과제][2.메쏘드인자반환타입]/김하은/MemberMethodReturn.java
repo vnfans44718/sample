@@ -19,7 +19,7 @@ public class MemberMethodReturn {
 	
 	public String hello(String c) {
 		System.out.println("---public String Hello()---");
-		return c;
+		return c+"님 안녕하세요";
 	}
 	
 }
