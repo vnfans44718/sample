@@ -31,7 +31,7 @@ public class MemberMethodReturn {
 	 */
 	public boolean method2() {
 		System.out.println("---public boolean method2()---");
-
+		
 		return true;
 	}
 	/*
@@ -54,8 +54,8 @@ public class MemberMethodReturn {
 	 *   - 매개변수  : 문자열(1개)
 	 *   - 구현내용  : 매개변수문자열에 "님 안녕하세요" 를 붙여서 문자열을반환
 	 */
-	public String hello(String A) {
-		return A+"님 안녕하세요";
+	public String hello(String a) {
+		return a+"님 안녕하세요";
 
 	}
 
