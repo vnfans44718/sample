@@ -29,10 +29,14 @@ public class DvdShopMain {
 		/*
 		 * 회원정보출력(회원이빌린Dvd들정보출력)
 		 */
-		mem.print();
-		Dvd.headerPrint();
-		for (int i = 0; i < dvds.length; i++) {
-			dvds[i].print();
+		if (dvds.length >= 4) {
+			System.out.println("DVD는 3개까지만 대여 가능합니다.");
+		} else {
+			mem.print();
+			Dvd.headerPrint();
+			for (int i = 0; i < dvds.length; i++) {
+				dvds[i].print();
+			}
 		}
 	}
 
