@@ -10,11 +10,11 @@ public class Book {
 	public Book() {
 	}
 
-	public Book(int bookNo, String bookTitle, String bookGenre, String bookInfo) {
+	public Book(int bookNo, String bookTitle, String bookGenre, String bookDetail) {
 		this.bookNo = bookNo;
 		this.bookTitle = bookTitle;
 		this.bookGenre = bookGenre;
-		this.bookDetail = bookInfo;
+		this.bookDetail = bookDetail;
 	}
 	
 	public void bookPrint() {
@@ -45,11 +45,11 @@ public class Book {
 		this.bookGenre = bookGenre;
 	}
 
-	public String getBookInfo() {
+	public String getBookDetail() {
 		return bookDetail;
 	}
 
-	public void setBookInfo(String bookDetail) {
+	public void setBookDetail(String bookDetail) {
 		this.bookDetail = bookDetail;
 	}
 	
