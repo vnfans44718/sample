@@ -1,34 +1,31 @@
-package com.itwill03.포함.배열포함;
+package com.itwill03.포함;
 
 public class DvdMember {
 	
 	private int memberNo;
 	private String memberName;
 	private String memberPhone;
-	private Dvd[] rentDvds;
+	private Dvd rentDvd;
 	
 	public DvdMember() {		
 	}
 	
-	public DvdMember(int memberNo, String memberName, String memberPhone, Dvd[] rentDvds) {
+	public DvdMember(int memberNo, String memberName, String memberPhone, Dvd rentDvd) {
 		this.memberNo = memberNo;
 		this.memberName = memberName;
 		this.memberPhone = memberPhone;
-		this.rentDvds = rentDvds;
+		this.rentDvd = rentDvd;
 	}
 	
 	public static void headerPrint() {
-		System.out.println("-------------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------------------------");
 		System.out.println("회원번호"+"\t"+"회원이름"+"\t"+"전화번호"+"\t"+"빌린dvd");
-		System.out.println("-------------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------------------------");
 	}
 
 	public void memberPrint() {
-		System.out.print(memberNo+"\t"+"\t"+memberName+"\t"+memberPhone);	
-		System.out.println();
-		for (int i=0; i<rentDvds.length; i++) {
-			rentDvds[i].dvdPrint();	
-		}
+		System.out.print(memberNo+"\t"+"\t"+memberName+"\t"+memberPhone);
+		rentDvd.dvdPrint();
 	}
 
 	public int getMemberNo() {
@@ -55,15 +52,12 @@ public class DvdMember {
 		this.memberPhone = memberPhone;
 	}
 
-	public Dvd[] getRentDvds() {
-		return rentDvds;
+	public Dvd getRentDvd() {
+		return rentDvd;
 	}
 
-	public void setRentDvds(Dvd[] rentDvds) {
-		this.rentDvds = rentDvds;
-		if (rentDvds.length >= 3) {
-				System.out.println("DVD는 최대 3개까지 대여할 수 있습니다");
-		}
-	}	
+	public void setRentDvd(Dvd rentDvd) {
+		this.rentDvd = rentDvd;
+	}
+
 }
-	

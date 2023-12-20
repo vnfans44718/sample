@@ -1,22 +1,21 @@
-package com.itwill03.포함.배열포함;
+package com.itwill03.포함;
 
 public class DvdShopMain {
 
 	public static void main(String[] args) {
 		
 		DvdMember member1 = new DvdMember(109, "김초콜릿", "01012345678", null);
+		DvdMember member2 = new DvdMember(285, "박마카롱", "01098765432", null);
 		
-		Dvd[] rentDvds = {
-				new Dvd(87, "여학교의 별", "일상/개그"),
-				new Dvd(10, "주토피아", "애니메이션"),
-				new Dvd(34, "어바웃 타임", "멜로/로맨스"),
-				new Dvd(29, "헤어질 결심", "멜로/로맨스")
-				};
+		Dvd dvd1 = new Dvd(87, "여학교의 별", "일상/개그");
+		Dvd dvd2 = new Dvd(10, "주토피아", "애니메이션");
 		
-		member1.setRentDvds(rentDvds);
+		member1.setRentDvd(dvd1);
+		member2.setRentDvd(dvd2);
 		
 		DvdMember.headerPrint();
 		member1.memberPrint();
-
+		member2.memberPrint();
+		
 	}
 }

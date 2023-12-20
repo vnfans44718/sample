@@ -1,35 +1,33 @@
-package com.itwill03.포함.배열포함;
+package com.itwill03.포함;
 
 public class BookMember {
 		
 	private int memberNo;
 	private String memberName;
 	private String memberPhone;
-	private Book[] books;
+	private Book book;
 	
 	public BookMember() {
 	}
 	
-	public BookMember(int memberNo, String memberName, String memberPhone, Book[] books) {
+	public static void headerPrint() {
+		System.out.println("----------------------------------------------------------------------------------------------------------------");
+		System.out.println("회원번호"+"\t"+"회원이름"+"\t"+"전화번호"+"\t"+"빌린책");
+		System.out.println("----------------------------------------------------------------------------------------------------------------");
+	}
+	
+	
+	public BookMember(int memberNo, String memberName, String memberPhone, Book book) {
 		super();
 		this.memberNo = memberNo;
 		this.memberName = memberName;
 		this.memberPhone = memberPhone;
-		this.books = books;
+		this.book = book;
 	}
 
-	public static void headerPrint() {
-		System.out.println("---------------------------------------------------------------------------------");
-		System.out.println("회원번호"+"\t"+"회원이름"+"\t"+"전화번호"+"\t"+"빌린책");
-		System.out.println("---------------------------------------------------------------------------------");
-	}
-	
 	public void memberPrint() {
 		System.out.print(memberNo+"\t"+"\t"+memberName+"\t"+"\t"+memberPhone);
-		System.out.println();
-		for (int i=0; i < books.length; i++) {
-			books[i].bookPrint();
-		}
+		book.bookPrint();
 	}
 
 	public int getMemberNo() {
@@ -56,13 +54,12 @@ public class BookMember {
 		this.memberPhone = memberPhone;
 	}
 
-	public Book[] getBooks() {
-		return books;
+	public Book getBook() {
+		return book;
 	}
 
-	public void setBooks(Book[] books) {
-		this.books = books;
+	public void setBook(Book book) {
+		this.book = book;
 	}
-
 	
 }

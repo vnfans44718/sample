@@ -1,4 +1,4 @@
-package com.itwill03.포함.배열포함;
+package com.itwill03.포함;
 
 public class Book {
 	
@@ -45,7 +45,7 @@ public class Book {
 		this.bookGenre = bookGenre;
 	}
 
-	public String getBookDetail() {
+	public String getBookInfo() {
 		return bookDetail;
 	}
 
