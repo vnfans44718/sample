@@ -4,7 +4,7 @@
 #### BookMember 안에 멤버변수로 포함된 Book
 
 
-<img src='image.png' width='70%' height='50%'/>
+<img src='image.png' width='50%'/>
 
 #### DvdMember  안에 멤버변수로 포함된 Dvd 
 
