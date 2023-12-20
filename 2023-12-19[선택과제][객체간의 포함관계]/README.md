@@ -3,8 +3,9 @@
 
 #### BookMember 안에 멤버변수로 포함된 Book
 
-![Alt text](image.png)
+
+<img src='image.png' width='50%'/>
 
 #### DvdMember  안에 멤버변수로 포함된 Dvd 
 
-![Alt text](image-1.png)
+<img src='image-1.png' width='50%'/>
