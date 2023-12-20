@@ -1,4 +1,3 @@
-package com.itwill00.기본;
 
 public class B {
 	/*
