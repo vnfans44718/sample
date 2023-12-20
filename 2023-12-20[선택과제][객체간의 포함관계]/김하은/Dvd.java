@@ -17,9 +17,9 @@ public class Dvd {
 	public static void dvdheaderPrint() {
 		System.out.println();
 		System.out.println();
-		System.out.println("-------------------------------------------------------------");
+		System.out.println("------------------------------------------------");
 		System.out.println("빌린 DVD");
-		System.out.println("-------------------------------------------------------------");
+		System.out.println("------------------------------------------------");
 	}
 	
 	public void dvdPrint() {

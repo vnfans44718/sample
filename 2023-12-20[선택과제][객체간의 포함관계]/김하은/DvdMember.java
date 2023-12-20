@@ -18,9 +18,9 @@ public class DvdMember {
 	}
 	
 	public static void headerPrint() {
-		System.out.println("-------------------------------------------------------------");
+		System.out.println("------------------------------------------------");
 		System.out.println("회원번호"+"\t"+"회원이름"+"\t"+"전화번호");
-		System.out.println("-------------------------------------------------------------");
+		System.out.println("------------------------------------------------");
 	}
 
 	public void memberPrint() {
