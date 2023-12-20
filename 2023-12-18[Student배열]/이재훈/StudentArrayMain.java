@@ -66,7 +66,7 @@ public class StudentArrayMain {
 		for (int a= 0; a < students.length; a++) {
 			if(students[a].getGrade()=='A') {
 				students[a].print();
-				continue;
+				
 			}
 		}
 		System.out.println();
