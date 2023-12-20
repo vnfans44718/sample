@@ -62,7 +62,7 @@ public class DvdMember {
 	public void setRentDvds(Dvd[] rentDvds) {
 		this.rentDvds = rentDvds;
 		if (rentDvds.length >= 3) {
-				System.out.println("대여 갯수를 초과했습니다");
+				System.out.println("DVD는 최대 3개까지 대여할 수 있습니다");
 		}
 	}	
 }
