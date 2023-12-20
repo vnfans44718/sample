@@ -11,11 +11,13 @@ public class MemberMethodReturnMain {
 		/*
 		 MemberMethodReturn객체의  method1 호출후 반환데이타받아서 출력
 		 */
-		System.out.println(mmr.method1());
+		int x=mmr.method1();
+		System.out.println(x);
 		/*
 		 MemberMethodReturn객체의  method2 호출후 반환데이타받아서 출력
 		 */
-		System.out.println(mmr.method2());
+		boolean y=mmr.method2();
+		System.out.println(y);
 
 		
 		/*
@@ -23,18 +25,18 @@ public class MemberMethodReturnMain {
 		 반환되는 정수데이타받아서 출력
 		 */
 		
-		System.out.println(mmr.add(3, 5));
+		int z=mmr.add(2, 23);
+		
+		System.out.println(z);
 		
 		/*
 		 MemberMethodReturn객체의 hello 메쏘드를 문자열인자 한개 넣어서 호출후 
 		 반환되는 문자열데이타받아서 출력
 		 */
-		System.out.println(mmr.hello("김수환"));
+		String string=mmr.hello("김수환");
+		System.out.println(string);
 	}
 }
-
-
-
 
 
 
