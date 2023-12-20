@@ -60,7 +60,7 @@ public class MemberMethodReturn {
 	 */
 	public String hello(String hi) {
 		System.out.println("---public String hello()---");
-		return hi;
+		return hi + "님 안녕하세요";
 	}
 
 }
