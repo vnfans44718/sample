@@ -13,8 +13,9 @@ public class Book {
 	private String desc;
 	
 	public Book() {
-		// TODO Auto-generated constructor stub
+		
 	}
+	
 	public Book(int no, String title, String category, String desc) {
 		super();
 		this.no = no;
@@ -22,34 +23,44 @@ public class Book {
 		this.category = category;
 		this.desc = desc;
 	}
+	
 	public int getNo() {
 		return no;
 	}
+	
 	public void setNo(int no) {
 		this.no = no;
 	}
+	
 	public String getTitle() {
 		return title;
 	}
+	
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	
 	public String getCategory() {
 		return category;
 	}
+	
 	public void setCategory(String category) {
 		this.category = category;
 	}
+	
 	public String getDesc() {
 		return desc;
 	}
+	
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
+	
 	public static void headerPrint() {
 		System.out.println("<< 빌린책 리스트 >>");
 		System.out.println("책번호\t" + "\t책제목\t" + "\t책분류\t" + "\t책설명\t");
 	}
+	
 	public void print() {
 		System.out.println(no + "\t" + title + "\t" + category + "\t" + desc + "\t");
 	}
