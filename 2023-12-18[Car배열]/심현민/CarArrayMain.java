@@ -47,10 +47,10 @@ public class CarArrayMain {
 		 * 1.차량객체생성
 		 * 2.빈자리찾아서대입
 		 */
-		Car zeep = new Car("1111",3);
+		Car jeep = new Car("1111",3);
 		for(int i = 0; i< carArray.length; i++) {
 			if(carArray[i] == null) {
-				carArray[i] = zeep;
+				carArray[i] = jeep;
 				break;
 			}
 		}
