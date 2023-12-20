@@ -58,17 +58,4 @@ public class Dvd {
 		this.genre = genre;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
 }
