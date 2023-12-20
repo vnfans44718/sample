@@ -63,7 +63,7 @@ public class MemberMethod {
 	 *   - 구현내용  : 인자로받은데이타 3개출력 
 	 */
 	public void method3(String str1, String str2, int no) {
-		System.out.println("public void method3(String str1, String str2, int no)실행 -->" + str1 + ", " + str2 + ", " + no);
+		System.out.println("public void method3(String str1, String str2, int no)실행 --> " + str1 + ", " + str2 + ", " + no);
 	}
 	
 }
