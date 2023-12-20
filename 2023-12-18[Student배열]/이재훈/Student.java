@@ -75,8 +75,6 @@ public class Student {
 		return grade;
 	}
 	
-	
-
 	public static void headerPrint() {
 		System.out.printf("---------------학생 성적출력-----------------------%n");
 		System.out.printf("%s %s %s %s %s %s %3s %s %s%n", "학번", "이름", "국어", "영어", "수학", "총점", "평균", "평점", "석차");
