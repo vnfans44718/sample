@@ -25,7 +25,11 @@ public class DvdMember {
 
 	public void memberPrint() {
 		System.out.print(memberNo+"\t"+"\t"+memberName+"\t"+memberPhone);
+		if(rentDvd != null) {
 		rentDvd.dvdPrint();
+		}else {
+			System.out.println("\t"+"빌린 DVD가 없습니다");
+		}	
 	}
 
 	public int getMemberNo() {
