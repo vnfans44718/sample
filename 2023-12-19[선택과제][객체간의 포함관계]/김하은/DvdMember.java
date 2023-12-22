@@ -9,6 +9,12 @@ public class DvdMember {
 	
 	public DvdMember() {		
 	}
+
+	public DvdMember(int memberNo, String memberName, String memberPhone) {
+		this.memberNo = memberNo;
+		this.memberName = memberName;
+		this.memberPhone = memberPhone;
+	}
 	
 	public DvdMember(int memberNo, String memberName, String memberPhone, Dvd rentDvd) {
 		this.memberNo = memberNo;
