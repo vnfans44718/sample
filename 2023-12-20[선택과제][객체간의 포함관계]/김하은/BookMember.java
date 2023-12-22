@@ -10,6 +10,12 @@ public class BookMember {
 	public BookMember() {
 	}
 	
+	public BookMember(int memberNo, String memberName, String memberPhone) {
+		this.memberNo = memberNo;
+		this.memberName = memberName;
+		this.memberPhone = memberPhone;
+	}
+
 	public BookMember(int memberNo, String memberName, String memberPhone, Book[] books) {
 		super();
 		this.memberNo = memberNo;
@@ -27,6 +33,10 @@ public class BookMember {
 	public void memberPrint() {
 		System.out.print(memberNo+"\t"+"\t"+memberName+"\t"+"\t"+memberPhone);
 		Book.bookheaderPrint();
+		if (books == null || books.length == 0) {
+			System.out.println("빌린 책이 없습니다");
+			return;
+		}
 		for (int i=0; i < books.length; i++) {
 			books[i].bookPrint();
 		}
