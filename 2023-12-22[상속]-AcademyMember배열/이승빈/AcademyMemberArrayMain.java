@@ -110,6 +110,13 @@ public class AcademyMemberArrayMain {
 				}
 			}
 		}
+		/*
+		for (AcademyMember academyMember : members) {
+			if (academyMember instanceof AcademyStaff && ((AcademyStaff) academyMember).getDepart().equals("영업")) {
+					academyMember.print();
+				}
+			}
+		*/
 		
 		/********************************************************************************/
 	}
