@@ -33,7 +33,7 @@ public class AcademyMemberArrayMain {
 		
 		System.out.println();
 		
-		System.out.println("3. 번호 2번 AcademyMember 한 명 출력");
+		System.out.println("2. 번호 2번 AcademyMember 한 명 출력");
 		for (int i=0; i<members.length; i++) {
 			if (members[i].getNo() == 2) {
 				members[i].print();
@@ -43,7 +43,7 @@ public class AcademyMemberArrayMain {
 		
 		System.out.println();
 		
-		System.out.println("4. 이름 KIM인 AcademyMember들 출력");
+		System.out.println("2. 이름 KIM인 AcademyMember들 출력");
 		for (int i=0; i<members.length; i++) {
 			if (members[i].getName().equals("KIM")) {
 				members[i].print();	
@@ -52,7 +52,7 @@ public class AcademyMemberArrayMain {
 		
 		System.out.println();
 		
-		System.out.println("5.AcademyMember 중에서 AcademyStudent들 출력");
+		System.out.println("3.AcademyMember 중에서 AcademyStudent들 출력");
 		for (AcademyMember academyMember : members) {
 			if (academyMember instanceof AcademyStudent) {
 				academyMember.print();
@@ -61,7 +61,7 @@ public class AcademyMemberArrayMain {
 		
 		System.out.println();
 		
-		System.out.println("6.AcademyMember 중에서 AcademyGangsa들 출력");
+		System.out.println("3.AcademyMember 중에서 AcademyGangsa들 출력");
 		for (AcademyMember academyMember : members) {
 			if (academyMember instanceof AcademyGangsa) {
 				academyMember.print();
@@ -70,7 +70,7 @@ public class AcademyMemberArrayMain {
 		
 		System.out.println();
 
-		System.out.println("7. AcademyMember 중에서 AcademyStaff들 출력");
+		System.out.println("3. AcademyMember 중에서 AcademyStaff들 출력");
 		for (AcademyMember academyMember : members) {
 			if (academyMember instanceof AcademyStaff) {
 				academyMember.print();
@@ -79,7 +79,7 @@ public class AcademyMemberArrayMain {
 		
 		System.out.println();
 		
-		System.out.println("8. AcademyMember 중에서 자바 반인 AcademyStudent들 출력");
+		System.out.println("4. AcademyMember 중에서 자바 반인 AcademyStudent들 출력");
 		for (AcademyMember academyMember : members) {
 			if (academyMember instanceof AcademyStudent) {
 				AcademyStudent tempStudent = (AcademyStudent)academyMember;
@@ -91,7 +91,7 @@ public class AcademyMemberArrayMain {
 					
 		System.out.println();
 		
-		System.out.println("9. AcademyMember 중에서 자바 과목인 AcademyGangsa들 출력");
+		System.out.println("4. AcademyMember 중에서 자바 과목인 AcademyGangsa들 출력");
 		for (AcademyMember academyMember : members) {
 			if ((academyMember instanceof AcademyGangsa) &&
 					((AcademyGangsa)academyMember).getSubject().equals("자바")) {
@@ -101,7 +101,7 @@ public class AcademyMemberArrayMain {
 		
 		System.out.println();
 		
-		System.out.println("10. AcademyMember 중에서 영업 부서인 AcademyStaff들 출력");
+		System.out.println("4. AcademyMember 중에서 영업 부서인 AcademyStaff들 출력");
 		for (AcademyMember academyMember : members) {
 			if ((academyMember instanceof AcademyStaff) &&
 					((AcademyStaff)academyMember).getDepart().equals("영업")){
