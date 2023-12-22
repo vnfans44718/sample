@@ -10,6 +10,13 @@ public class DvdMember {
 	public DvdMember() {		
 	}
 	
+	public DvdMember(int memberNo, String memberName, String memberPhone) {
+		super();
+		this.memberNo = memberNo;
+		this.memberName = memberName;
+		this.memberPhone = memberPhone;
+	}
+
 	public DvdMember(int memberNo, String memberName, String memberPhone, Dvd[] rentDvds) {
 		this.memberNo = memberNo;
 		this.memberName = memberName;
@@ -26,9 +33,18 @@ public class DvdMember {
 	public void memberPrint() {
 		System.out.print(memberNo+"\t"+"\t"+memberName+"\t"+memberPhone);	
 		Dvd.dvdheaderPrint();
-		for (int i=0; i<rentDvds.length; i++) {
-			rentDvds[i].dvdPrint();	
-		}
+		if (rentDvds == null || rentDvds.length == 0) {
+			System.out.println("빌린 DVD가 없습니다");
+			return;
+		}	
+			if (rentDvds.length >= 3) {
+					System.out.println("DVD는 최대 3개까지 빌릴 수 있습니다");
+					return;
+			}else {	
+				for (int i=0; i<rentDvds.length; i++) {
+					rentDvds[i].dvdPrint();	
+				}
+			}	  
 	}
 
 	public int getMemberNo() {
@@ -61,10 +77,6 @@ public class DvdMember {
 
 	public void setRentDvds(Dvd[] rentDvds) {
 		this.rentDvds = rentDvds;
-		if (rentDvds.length >= 3) {
-				System.out.println("DVD는 최대 3개까지 대여할 수 있습니다");
-				System.out.println();
-		}
 	}	
 }
 	
