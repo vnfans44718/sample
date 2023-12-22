@@ -9,10 +9,15 @@ public class AcademyMemberArrayMain {
 		AcademyMember m3=new AcademyGangsa();
 		*/
 
-		AcademyMember[] members = { new AcademyStudent(1, "KIM", "자바"), new AcademyStudent(2, "LEE", "리눅스"),
-				new AcademyStudent(3, "KIM", "자바"), new AcademyStudent(4, "LEE", "IOT"),
-				new AcademyGangsa(5, "CHOI", "파이썬"), new AcademyGangsa(6, "KIM", "자바"),
-				new AcademyGangsa(7, "DIM", "자바"), new AcademyStaff(8, "AIM", "영업"), new AcademyStaff(9, "QIM", "생산") };
+		AcademyMember[] members = { new AcademyStudent(1, "KIM", "자바"),
+					    new AcademyStudent(2, "LEE", "리눅스"),
+					    new AcademyStudent(3, "KIM", "자바"), 
+					    new AcademyStudent(4, "LEE", "IOT"),
+					    new AcademyGangsa(5, "CHOI", "파이썬"), 
+					    new AcademyGangsa(6, "KIM", "자바"),
+					    new AcademyGangsa(7, "DIM", "자바"), 
+					    new AcademyStaff(8, "AIM", "영업"), 
+					    new AcademyStaff(9, "QIM", "생산") };
 
 		AcademyMember[] recvmembers = members;
 
