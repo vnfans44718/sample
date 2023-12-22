@@ -69,19 +69,19 @@ public class AcademyMemberArrayMain {
 		}
 		System.out.println("4.AcademyMember 중에서 자바 반  인 AcademyStudent 들 출력");
 		for (AcademyMember academyMember : members) {
-			if(academyMember instanceof AcademyStudent && ((AcademyStudent)academyMember).getBan()=="자바"){
+			if(academyMember instanceof AcademyStudent && ((AcademyStudent)academyMember).getBan().equals("자바")){
 				academyMember.print();
 			}
 		}
 		System.out.println("4.AcademyMember 중에서 자바 과목인 AcademyGangsa  들 출력");
 		for (AcademyMember academyMember : members) {
-			if(academyMember instanceof AcademyGangsa && ((AcademyGangsa)academyMember).getSubject()=="자바") {
+			if(academyMember instanceof AcademyGangsa && ((AcademyGangsa)academyMember).getSubject().equals("자바")){
 				academyMember.print();
 			}
 		}
 		System.out.println("4.AcademyMember 중에서 영업 부서인 AcademyStaff   들 출력");
 		for (AcademyMember academyMember : members) {
-			if(academyMember instanceof AcademyStaff && ((AcademyStaff)academyMember).getDepart()=="영업"){
+			if(academyMember instanceof AcademyStaff && ((AcademyStaff)academyMember).getDepart().equals("영업")){
 					academyMember.print();
 			}
 		}
