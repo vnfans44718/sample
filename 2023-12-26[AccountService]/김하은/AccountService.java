@@ -30,27 +30,34 @@ public class AccountService {
 	}
 	
 	/*
-	0. 계좌객체를 인자로 받아서 Account[]에 추가 [OPTION]
-	*
+	 * << 과제 아님 >>
+	 *  0. 계좌객체를 인자로 받아서 Account[]에 추가 [OPTION]
+	 */
 	public void addAccount(Account newAccount) {
 		Account[] temps = new Account[accounts.length+1];
-		temps[accounts.length-1] = newAccount;
-		for (int i=0; i<temps.length; i++) {
+		
+		for (int i=0; i<accounts.length; i++) {
 			temps[i] = accounts[i];
 		}
+		
+		temps[temps.length-1] = newAccount;
+		accounts = temps;
 	}
 	
 	/*
 	 * << 과제 아님 >>
 	 * 0. 계좌데이터를 인자로 받아서 Account[]에 추가 [OPTION]
-	public void addAccount(int no, String owner, int balance, double iyul) {}
-		/*
-		 * 1.배열크기증가
-		 *   - 기존배열보다큰배열생성
-		 *   - 기존데이타 옮김
-		 */
-	
-	
+	 */
+	public void addAccount1(int no, String owner, int balance, double iyul) {
+		Account[] temps = new Account[accounts.length+1];
+		
+		for (int i=0; i<accounts.length; i++) {
+			temps[i] = accounts[i];
+		}
+		
+		temps[temps.length-1] = new Account(no, owner, balance, iyul);
+		accounts = temps;
+	}
 	
 	/*
 	 1. 은행계좌들 총계좌수 출력메쏘드 정의
@@ -151,8 +158,217 @@ public class AccountService {
 	 * sortField --> 1:번호,2:이름,3:잔고,4:이율
 	 * sortOrder --> 1:오르차순,2:내림차순
 	 *
-	public void sort(int sortField,int sortOrder) {}
-	
+	public void sort(int sortField, int sortOrder) {
+		for (int i=0; i<accounts.length-1; i++) {
+			for (int j=0; j<accounts.length-1-i; j++) {
+				if ((sortField == 1) && (sortOrder == 1)) {
+					if (accounts[j].getNo() > accounts[j+1].getNo()) {
+						Account temp = accounts[j];
+						accounts[j] = accounts[j+1];
+						accounts[j+1] = temp;
+					}
+				}else if ((sortField == 1) && (sortOrder ==2)) {
+					if (accounts[j].getNo() < accounts[j+1].getNo()) {
+						Account temp = accounts[j];
+						accounts[j] = accounts[j+1];
+						accounts[j+1] = temp;
+					}
+				}else if ((sortField == 2) && (sortOrder == 1)) {
+					if (accounts[j].getOwner().compareTo(accounts[j+1].getOwner()) > 0) {
+						Account temp = accounts[j];
+						accounts[j] = accounts[j+1];
+						accounts[j+1] = temp;
+					}
+				}else if ((sortField == 2) && (sortOrder == 2)) {
+					if (accounts[j].getOwner().compareTo(accounts[j+1].getOwner()) < 0) {
+						Account temp = accounts[j];
+						accounts[j] = accounts[j+1];
+						accounts[j+1] = temp;
+					}
+				}else if ((sortField == 3) && (sortOrder == 1)) {
+					if (accounts[j].getBalance() > accounts[j+1].getBalance()) {
+						Account temp = accounts[j];
+						accounts[j] = accounts[j+1];
+						accounts[j+1] = temp;
+					}
+				}else if ((sortField == 3 && sortOrder == 2)) {
+					if (accounts[j].getBalance() < accounts[j+1].getBalance()) {
+						Account temp = accounts[j];
+						accounts[j] = accounts[j+1];
+						accounts[j+1] = temp;
+					}
+				}else if ((sortField == 4) && (sortOrder == 1)) {
+					if (accounts[j].getIyul() > accounts[j+1].getIyul()) {
+						Account temp = accounts[j];
+						accounts[j] = accounts[j+1];
+						accounts[j+1] = temp;
+					}
+				}else {
+					if (accounts[j].getIyul() < accounts[j+1].getIyul()) {
+						Account temp = accounts[j];
+						accounts[j] = accounts[j+1];
+						accounts[j+1] = temp;
+					}
+				}
+			}
+		}
+	}
+	*/
+	/*
+	public void sort(int sortField, int sortOrder) {
+		for (int i=0; i<accounts.length-1; i++) {
+			for (int j=0; j<accounts.length-1-i; j++) {
+				if (sortField == 1) {
+					if (sortOrder == 1) {
+						if (accounts[j].getNo() > accounts[j+1].getNo()) {
+							Account temp = accounts[j];
+							accounts[j] = accounts[j+1];
+							accounts[j+1] = temp;
+						}
+					}
+					else {
+						if (accounts[j].getNo() < accounts[j+1].getNo()) {
+							Account temp = accounts[j];
+							accounts[j] = accounts[j+1];
+							accounts[j+1] = temp;
+						}
+					}
+				}
+				
+				if (sortField == 2) {
+					if (sortOrder == 1) {
+						if (accounts[j].getOwner().compareTo(accounts[j+1].getOwner()) > 0) {
+							Account temp = accounts[j];
+							accounts[j] = accounts[j+1];
+							accounts[j+1] = temp;
+						}
+					}
+					else {
+						if (accounts[j].getOwner().compareTo(accounts[j+1].getOwner()) < 0) {
+							Account temp = accounts[j];
+							accounts[j] = accounts[j+1];
+							accounts[j+1] = temp;
+						}
+					}
+				}
+				
+				if (sortField == 3) {
+					if (sortOrder == 1) {
+						if (accounts[j].getBalance() > accounts[j+1].getBalance()) {
+							Account temp = accounts[j];
+							accounts[j] = accounts[j+1];
+							accounts[j+1] = temp;
+						}	
+					}
+					else {
+						if (accounts[j].getBalance() < accounts[j+1].getBalance()) {
+							Account temp = accounts[j];
+							accounts[j] = accounts[j+1];
+							accounts[j+1] = temp;
+						}
+					}
+				}
+				
+				if (sortField == 4) {
+					if (sortOrder == 1) {
+						if (accounts[j].getIyul() > accounts[j+1].getIyul()) {
+							Account temp = accounts[j];
+							accounts[j] = accounts[j+1];
+							accounts[j+1] = temp;
+						}
+						
+					}
+					else {
+						if (accounts[j].getIyul() < accounts[j+1].getIyul()) {
+							Account temp = accounts[j];
+							accounts[j] = accounts[j+1];
+							accounts[j+1] = temp;
+						}
+					}
+				}
+			}
+		}
+	}
+	*/
+	public void sort(int sortField, int sortOrder) {
+		for (int i=0; i<accounts.length-1; i++) {
+			for (int j=0; j<accounts.length-1-i; j++) {
+				switch (sortField) {
+					case 1:
+						if (sortOrder == 1) {
+							if (accounts[j].getNo() > accounts[j+1].getNo()) {
+								Account temp = accounts[j];
+								accounts[j] = accounts[j+1];
+								accounts[j+1] = temp;
+							}
+						}	
+						else {
+							if (accounts[j].getNo() < accounts[j+1].getNo()) {
+								Account temp = accounts[j];
+								accounts[j] = accounts[j+1];
+								accounts[j+1] = temp;
+							}
+						}
+						break;
+						
+					case 2:	
+						if (sortOrder == 1) {
+							if (accounts[j].getOwner().compareTo(accounts[j+1].getOwner()) > 0) {
+								Account temp = accounts[j];
+								accounts[j] = accounts[j+1];
+								accounts[j+1] = temp;
+							}
+						}
+						else {
+							if (accounts[j].getOwner().compareTo(accounts[j+1].getOwner()) < 0) {
+								Account temp = accounts[j];
+								accounts[j] = accounts[j+1];
+								accounts[j+1] = temp;
+							}
+						}
+						break;
+						
+					case 3:
+						if (sortOrder == 1) {
+							if (accounts[j].getBalance() > accounts[j+1].getBalance()) {
+								Account temp = accounts[j];
+								accounts[j] = accounts[j+1];
+								accounts[j+1] = temp;
+							}	
+						}
+						else {
+							if (accounts[j].getBalance() < accounts[j+1].getBalance()) {
+								Account temp = accounts[j];
+								accounts[j] = accounts[j+1];
+								accounts[j+1] = temp;
+							}
+						}
+						break;
+						
+					case 4:
+						if (sortOrder == 1) {
+							if (accounts[j].getIyul() > accounts[j+1].getIyul()) {
+								Account temp = accounts[j];
+								accounts[j] = accounts[j+1];
+								accounts[j+1] = temp;
+							}
+							
+						}
+						else {
+							if (accounts[j].getIyul() < accounts[j+1].getIyul()) {
+								Account temp = accounts[j];
+								accounts[j] = accounts[j+1];
+								accounts[j+1] = temp;
+							}
+						}
+						break;
+						
+					default :
+						break;
+				}
+			}	
+		}
+	}
 	
 	/*
 	 10.계좌를 잔고순으로 오름차순 정렬
@@ -161,9 +377,9 @@ public class AccountService {
 		for (int i=0; i<accounts.length-1; i++) {
 			for (int j=0; j< accounts.length-1-i; j++) {
 				if (accounts[j].getBalance() > accounts[j+1].getBalance()) {
-					Account temp1 = accounts[j];
+					Account temp = accounts[j];
 					accounts[j] = accounts[j+1];
-					accounts[j+1] = temp1;
+					accounts[j+1] = temp;
 				}
 			}
 		}
@@ -176,9 +392,9 @@ public class AccountService {
 		for (int i=0; i<accounts.length-1; i++) {
 			for (int j=0; j<accounts.length-1-i; j++) {
 				if (accounts[j].getBalance() < accounts[j+1].getBalance()) {
-					Account temp2 = accounts[j];
+					Account temp = accounts[j];
 					accounts[j] = accounts[j+1];
-					accounts[j+1] = temp2;
+					accounts[j+1] = temp;
 				}
 			}
 		} 
@@ -189,11 +405,11 @@ public class AccountService {
 	12.계좌객체를 인자로 받아서 이름,잔고,이율 수정(update) [OPTION]
 	*/
 	public void updateAccount(Account updateAccount) {
-		for (Account temp3 : accounts) {
-			if (temp3.getNo() == updateAccount.getNo()) {
-				temp3.setOwner(updateAccount.getOwner());
-				temp3.setBalance(updateAccount.getBalance());
-				temp3.setIyul(updateAccount.getIyul()); 
+		for (Account temp : accounts) {
+			if (temp.getNo() == updateAccount.getNo()) {
+				temp.setOwner(updateAccount.getOwner());
+				temp.setBalance(updateAccount.getBalance());
+				temp.setIyul(updateAccount.getIyul()); 
 			}
 		}
 	}
@@ -203,11 +419,11 @@ public class AccountService {
 	13.번호,이름,잔고,이율을 인자로 받아서 계좌객체 수정(update) [OPTION]
 	*/
 	public void updateAccount(int no,String owner,int balance,double iyul) {
-		for (Account temp4 : accounts) {
-			if (temp4.getNo() == no) {
-				temp4.setOwner(owner);
-				temp4.setBalance(balance);
-				temp4.setIyul(iyul);
+		for (Account temp : accounts) {
+			if (temp.getNo() == no) {
+				temp.setOwner(owner);
+				temp.setBalance(balance);
+				temp.setIyul(iyul);
 			}
 		}
 	}

@@ -5,15 +5,14 @@ public class AccountServiceMain {
 		
 		AccountService accountService = new AccountService();
 		
-		/*
 		System.out.println("0.AccountService객체야 Account객체줄게 추가해줘(배열사이즈증가) [OPTION]");
-		Account temp5 = new Account(1234, "Ariel", 57000, 2.2);
-		accountService.addAccount(temp5);
+		Account temp1 = new Account(1234, "Ariel", 57000, 2.2);
+		accountService.addAccount(temp1);
 		accountService.print();
 		
-		/*
 		System.out.println("0.AccountService객체야 번호,이름,잔고,이율줄게 계좌객체 추가해줘(배열사이즈증가) [OPTION]");
-		*/
+		accountService.addAccount1(5678, "Moana", 23000, 9.9);
+		accountService.print();
 		
 		System.out.println("1.AccountService객체야 은행계좌들 총계좌수 출력해줘");
 		accountService.totAccountNumberPrint();
@@ -52,9 +51,8 @@ public class AccountServiceMain {
 		accountService.sortByBalanceDescending();
 		accountService.print();
 		
-		/*
 		accountService.sort(AccountService.SORT_BY_NO, AccountService.SORT_ASC);
-		*/
+		accountService.print();
 		
 		System.out.println("12.AccountService객체야 계좌객체줄게 이름,잔고,이율 수정해줘(update) [OPTION]");
 		Account temp2 = new Account(2222, "Orora", 26000, 8.8);
