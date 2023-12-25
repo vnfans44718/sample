@@ -7,11 +7,11 @@ public class AccountServiceMain {
 		
 		System.out.println("0.AccountService객체야 Account객체줄게 추가해줘(배열사이즈증가) [OPTION]");
 		Account temp1 = new Account(1234, "Ariel", 57000, 2.2);
-		accountService.addAccount(temp1);
+		accountService.addAccount1(temp1);
 		accountService.print();
 		
 		System.out.println("0.AccountService객체야 번호,이름,잔고,이율줄게 계좌객체 추가해줘(배열사이즈증가) [OPTION]");
-		accountService.addAccount1(5678, "Moana", 23000, 9.9);
+		accountService.addAccount2(5678, "Rapunzel", 23000, 9.9);
 		accountService.print();
 		
 		System.out.println("1.AccountService객체야 은행계좌들 총계좌수 출력해줘");
