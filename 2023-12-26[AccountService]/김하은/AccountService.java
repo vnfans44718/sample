@@ -35,11 +35,9 @@ public class AccountService {
 	 */
 	public void addAccount1(Account newAccount) {
 		Account[] temps = new Account[accounts.length+1];
-		
 		for (int i=0; i<accounts.length; i++) {
 			temps[i] = accounts[i];
 		}
-		
 		temps[temps.length-1] = newAccount;
 		accounts = temps;
 	}
@@ -50,11 +48,9 @@ public class AccountService {
 	 */
 	public void addAccount2(int no, String owner, int balance, double iyul) {
 		Account[] temps = new Account[accounts.length+1];
-		
 		for (int i=0; i<accounts.length; i++) {
 			temps[i] = accounts[i];
 		}
-		
 		temps[temps.length-1] = new Account(no, owner, balance, iyul);
 		accounts = temps;
 	}
@@ -293,6 +289,7 @@ public class AccountService {
 	public void sort(int sortField, int sortOrder) {
 		for (int i=0; i<accounts.length-1; i++) {
 			for (int j=0; j<accounts.length-1-i; j++) {
+				
 				switch (sortField) {
 					case 1:
 						if (sortOrder == 1) {
