@@ -20,12 +20,17 @@ public class AccountServiceMain {
 		System.out.println("5.AccountService객체야 계좌잔고줄께 잔고이상인 계좌들출력해줘");
 		accountService.findByBalancePrint(80000);
 		System.out.println("6.AccountService객체야 계좌이율 인자로줄께 이율이상인 계좌들출력해줘");
-		
+		accountService.findByIyulPrint(3.5);
 		System.out.println("7.AccountService객체야 계좌주이름 인자로줄께 계좌주이름과일치하는 계좌들출력해줘");
+		accountService.findByOwnerPrint("KIM");
 		System.out.println("8.AccountService객체야 계좌번호,입금할돈 인자로줄께 입금해줘");
+		accountService.depositByNoAndMoneyPrint(1111, 20000);
 		System.out.println("9.AccountService객체야 계좌번호,출금할돈 인자로줄께 출금해줘");
+		accountService.withDrawByNoAndMoneyPrint(2222, 10000);
 		System.out.println("10.AccountService객체야 계좌를 잔고순으로 오름차순정렬해줘");
+		accountService.sortUpByBalance();
 		System.out.println("11.AccountService객체야 계좌를 잔고순으로 내림차순정렬해줘");
+		accountService.sortDownByBalance();
 		/*
 		<<과제아님>>
 		accountService.sort(AccountService.SORT_BY_NO, AccountService.SORT_ASC);

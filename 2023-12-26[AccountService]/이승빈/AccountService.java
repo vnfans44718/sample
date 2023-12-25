@@ -1,4 +1,7 @@
 package com.itwill05.service.array.account;
+
+import java.util.Iterator;
+
 /*
  * Account객체전체에관련된 업무를 실행할클래스
  * 		1.계좌객체들(Account[]) 을멤버변수로가진다.
@@ -79,9 +82,9 @@ public class AccountService {
 	/*
 	 *  5.계좌잔고 인자로 받아서 잔고이상인 계좌들출력
 	 */
-	public void findByBalancePrint(int no) {
+	public void findByBalancePrint(int balance) {
 		for (Account account : accounts) {
-			if (account.getBalance() >= no) {
+			if (account.getBalance() >= balance) {
 				account.print();
 			}
 		}
@@ -90,27 +93,85 @@ public class AccountService {
 	/*
 	6.계좌이율 인자로 받아서 이율이상인 계좌들출력
 	*/
-	
+	public void findByIyulPrint(double iyul) {
+		for (Account account : accounts) {
+			if (account.getIyul() >= iyul) {
+				account.print();
+			}
+		}
+	}
 	
 	/*
 	7.계좌주이름 인자로 받아서 인자이름과동일한 계좌들출력
 	 */
+	public void findByOwnerPrint(String owner) {
+		for (Account account : accounts) {
+			if (account.getOwner() == owner) {
+				account.print();
+			}
+		}
+		
+	}
 	
 	/*
 	8.계좌번호,입금할돈 인자로 받아서 입금
 	 */
+	public void depositByNoAndMoneyPrint(int no, int money) {
+		for (Account account : accounts) {
+			if (account.getNo() == no) {
+				account.deposit(money);
+				account.print();
+			}
+		}
+	}
 	
 	/*
 	9.계좌번호,출금할돈 인자로 받아서 출금
 	 */
+	public void withDrawByNoAndMoneyPrint(int no, int money) {
+		for (Account account : accounts) {
+			if (account.getNo() == no) {
+				account.withDraw(money);
+				account.print();
+			}
+		}
+	}
 	
 	/*
 	 10.계좌를 잔고순으로 오름차순정렬
 	 */
+	public void sortUpByBalance()	{
+		for (int i = 0; i < accounts.length - 1; i++) {
+			for (int j = 0; j < accounts.length - 1 - i; j++) {
+				if (accounts[j].getBalance() > accounts[j + 1].getBalance()) {
+					Account tempUp = accounts[j];
+					accounts[j] = accounts[j + 1];
+					accounts[j + 1] = tempUp;
+				}
+			}
+		}
+		for (Account account : accounts) {
+			account.print();
+		}
+	}
 	
 	/*
 	 11.계좌를 잔고순으로 내림차순정렬
 	 */
+	public void sortDownByBalance()	{
+		for (int i = 0; i < accounts.length - 1; i++) {
+			for (int j = 0; j < accounts.length - 1 - i; j++) {
+				if (accounts[j].getBalance() < accounts[j + 1].getBalance()) {
+					Account tempDown = accounts[j];
+					accounts[j] = accounts[j + 1];
+					accounts[j + 1] = tempDown;
+				}
+			}
+		}
+		for (Account account : accounts) {
+			account.print();
+		}
+	}
 	
 	/*
 	 << 과제 아님 >>
