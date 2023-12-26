@@ -264,7 +264,7 @@ public class AccountServiceReturn {
 					for (int i = 0; i < accounts.length - 1; i++) {
 						boolean isSwap = false;
 						for (int j = 0; j < accounts.length - 1 - i; j++) {
-							if (accounts[j].getNo() > accounts[j + 1].getNo()) {
+							if (accounts[j].getOwner().compareTo(accounts[j + 1].getOwner()) > 0) {
 								Account tempAccount = accounts[j];
 								accounts[j] = accounts[j + 1];
 								accounts[j + 1] = tempAccount;
@@ -279,7 +279,7 @@ public class AccountServiceReturn {
 					for (int i = 0; i < accounts.length - 1; i++) {
 						boolean isSwap = false;
 						for (int j = 0; j < accounts.length - 1 - i; j++) {
-							if (accounts[j].getNo() < accounts[j + 1].getNo()) {
+							if (accounts[j].getOwner().compareTo(accounts[j + 1].getOwner()) < 0) {
 								Account tempAccount = accounts[j];
 								accounts[j] = accounts[j + 1];
 								accounts[j + 1] = tempAccount;
