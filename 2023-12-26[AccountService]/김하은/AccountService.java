@@ -33,7 +33,7 @@ public class AccountService {
 	 * << 과제 아님 >>
 	 *  0. 계좌객체를 인자로 받아서 Account[]에 추가 [OPTION]
 	 */
-	public void addAccount1(Account newAccount) {
+	public void addAccount(Account newAccount) {
 		Account[] temps = new Account[accounts.length+1];
 		for (int i=0; i<accounts.length; i++) {
 			temps[i] = accounts[i];
@@ -46,7 +46,7 @@ public class AccountService {
 	 * << 과제 아님 >>
 	 * 0. 계좌데이터를 인자로 받아서 Account[]에 추가 [OPTION]
 	 */
-	public void addAccount2(int no, String owner, int balance, double iyul) {
+	public void addAccount(int no, String owner, int balance, double iyul) {
 		Account[] temps = new Account[accounts.length+1];
 		for (int i=0; i<accounts.length; i++) {
 			temps[i] = accounts[i];
