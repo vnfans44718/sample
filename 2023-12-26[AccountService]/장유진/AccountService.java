@@ -80,7 +80,7 @@ public class AccountService {
 	/*
 	 * 5.계좌잔고 인자로 받아서 잔고이상인 계좌들출력
 	 */
-	public void moreThanBalancePrint(int balance) {
+	public void findByBalancePrint(int balance) {
 		for (Account account : accounts) {
 			if (account.getBalance() >= balance) {
 				account.print();
@@ -91,7 +91,7 @@ public class AccountService {
 	/*
 	 * 6.계좌이율 인자로 받아서 이율이상인 계좌들출력
 	 */
-	public void moreThanIyulPrint(double iyul) {
+	public void findByIyulPrint(double iyul) {
 		for (Account account : accounts) {
 			if (account.getIyul() >= iyul) {
 				account.print();
@@ -113,10 +113,10 @@ public class AccountService {
 	/*
 	 * 8.계좌번호,입금할돈 인자로 받아서 입금
 	 */
-	public void deposit(int no, int m) {
+	public void ipGum(int no, int m) {
 		for (Account account : accounts) {
 			if (account.getNo() == no) {
-				account.setBalance(account.getBalance() + m);
+				account.ipGum(m);
 				break;
 			}
 		}
@@ -125,10 +125,10 @@ public class AccountService {
 	/*
 	 * 9.계좌번호,출금할돈 인자로 받아서 출금
 	 */
-	public void withdraw(int no, int m) {
+	public void chulGum(int no, int m) {
 		for (Account account : accounts) {
 			if (account.getNo() == no) {
-				account.setBalance(account.getBalance() - m);
+				account.chulGum(m);
 				break;
 			}
 		}
@@ -157,7 +157,7 @@ public class AccountService {
 	/*
 	 * 11.계좌를 잔고순으로 내림차순정렬
 	 */
-	public void sortByBalanceDes() {
+	public void sortByBalanceDesc() {
 		for (int i = 0; i < accounts.length - 1; i++) {
 			boolean isSwap = false;
 			for (int j = 0; j < accounts.length - 1 - i; j++) {

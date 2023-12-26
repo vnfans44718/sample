@@ -42,11 +42,11 @@ public class Account {
 		this.iyul=iyul;
 	}
 	//입금
-	public void deposit(int m) {
+	public void ipGum(int m) {
 		this.balance=this.balance+m;
 	}
 	//출금
-	public void withDraw(int m) {
+	public void chulGum(int m) {
 		this.balance=this.balance-m;
 	}
 	//계좌헤더출력

@@ -22,28 +22,28 @@ public class AccountServiceMain {
 		accountService.findByNoPrint(7777);
 		
 		System.out.println("5.AccountService객체야 계좌잔고줄께 잔고이상인 계좌들출력해줘");
-		accountService.moreThanBalancePrint(50000);
+		accountService.findByBalancePrint(50000);
 		
 		System.out.println("6.AccountService객체야 계좌이율 인자로줄께 이율이상인 계좌들출력해줘");
-		accountService.moreThanIyulPrint(3.3);
+		accountService.findByIyulPrint(3.3);
 		
 		System.out.println("7.AccountService객체야 계좌주이름 인자로줄께 계좌주이름과일치하는 계좌들출력해줘");
 		accountService.findByNamePrint("KIM");
 		
 		System.out.println("8.AccountService객체야 계좌번호,입금할돈 인자로줄께 입금해줘");
-		accountService.deposit(5555, 12300);
-		accountService.deposit(8888, 54300);
+		accountService.ipGum(5555, 12300);
+		accountService.ipGum(8888, 54300);
 		
 		System.out.println("9.AccountService객체야 계좌번호,출금할돈 인자로줄께 출금해줘");
-		accountService.withdraw(4444, 15450);
-		accountService.withdraw(2222, 4500);
+		accountService.chulGum(4444, 15450);
+		accountService.chulGum(2222, 4500);
 		
 		System.out.println("10.AccountService객체야 계좌를 잔고순으로 오름차순정렬해줘");
 		accountService.sortByBalanceAsc();
 		accountService.print();
 		
 		System.out.println("11.AccountService객체야 계좌를 잔고순으로 내림차순정렬해줘");
-		accountService.sortByBalanceDes();
+		accountService.sortByBalanceDesc();
 		accountService.print();
 		
 		
