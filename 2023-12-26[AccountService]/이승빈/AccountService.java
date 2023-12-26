@@ -1,7 +1,4 @@
 package com.itwill05.service.array.account;
-
-import java.util.Iterator;
-
 /*
  * Account객체전체에관련된 업무를 실행할클래스
  * 		1.계좌객체들(Account[]) 을멤버변수로가진다.
@@ -21,22 +18,34 @@ public class AccountService {
 		accounts[7] = new Account(8888, "qIM", 91000, 1.7);
 		accounts[8] = new Account(9999, "mIM", 12000, 0.7);
 	}
+	
 	/*
-	  << 과제 아님 >>
-	   0.계좌객체를 인자로받아서 Account[]에추가[OPTION]
-	*/
-	public void Account() {
-		
+	 * << 과제 아님 >>
+	 * 0.계좌객체를 인자로받아서 Account[]에추가[OPTION]
+	 */
+	public void addAccount(Account newAccount) {
+		Account[] newAccounts = new Account[accounts.length + 1];
+		for (int i = 0; i < accounts.length; i++) {
+			newAccounts[i] = accounts[i];
+		}
+		newAccounts[accounts.length] = newAccount;
+		this.accounts = newAccounts;
 	}
 	
 	/*
 	 * << 과제 아님 >>
 	 * 0.계좌데이타를 인자로받아서 Account[]에추가[OPTION]
-	*/
-	
-	public AccountService(Account[] accounts) {
-		super();
+	 */
+	public void addByAccountData(int no, String owner, int balance, double iyul) {
+		Account newAccount = new Account(no, owner, balance, iyul);
 		this.accounts = accounts;
+		
+		Account[] newAccounts = new Account[accounts.length + 1];
+		for (int i = 0; i < accounts.length; i++) {
+			newAccounts[i] = accounts[i];
+		}
+		newAccounts[accounts.length] = newAccount;
+		this.accounts = newAccounts;
 	}
 	
 	/*

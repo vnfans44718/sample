@@ -1,12 +1,17 @@
 package com.itwill05.service.array.account;
+
 public class AccountServiceMain {
 	public static void main(String[] args) {
 		
 		AccountService accountService = new AccountService();
 		
 		System.out.println("0.AccountService객체야 Account 객체줄께추가해줘(배열사이즈증가)[OPTION]");
+		Account newAccount = new Account(1234, "LEE", 75000, 3.5);
+		accountService.addAccount(newAccount);
+		accountService.print();
 		System.out.println("0.AccountService객체야 번호,이름,잔고,이율줄께 계좌객체추가해줘(배열사이즈증가)[OPTION]");
-		
+		accountService.addByAccountData(5678, "LUKAS", 65000, 5.5);
+		accountService.print();
 		System.out.println("1.AccountService객체야 은행계좌들 총계좌수출력해줘");
 		accountService.totAccountNumberPrint();
 		System.out.println("2.AccountService객체야 은행계좌들 전체출력해줘");
