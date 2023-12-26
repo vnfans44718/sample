@@ -76,10 +76,13 @@ public class AccountService {
 	 * 3. 은행계좌들 총잔고 출력메쏘드 정의  
 	 */
 	public void totBalancePrint() {	
-		for (Account totBal : accounts) {
-			System.out.println(totBal.getBalance());
+		int totBal = 0;
+		for (int i=0; i<accounts.length; i++) {
+			totBal += accounts[i].getBalance();
 		}
+			System.out.println("총 잔고 출력: " + totBal);
 	}
+	
 	
 	/*
 	 4. 계좌번호 인자로 받아서 계좌 한 개 출력
@@ -425,4 +428,3 @@ public class AccountService {
 		}
 	}
 }
-
