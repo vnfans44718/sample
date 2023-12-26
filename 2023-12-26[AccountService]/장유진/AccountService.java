@@ -23,18 +23,44 @@ public class AccountService {
 	  << 과제 아님 >>
 	   0.계좌객체를 인자로받아서 Account[]에추가[OPTION]
 	*/
+	public void addAccount(Account newAccount) {
+		/*
+		 * 1.배열크기증가 
+		 * 	- 기존배열보다큰배열생성 
+		 * 	- 기존데이타 옮김
+		 */
+		Account[] newAccounts = new Account[accounts.length + 1];
+		for (int i = 0; i < accounts.length; i++) {
+			newAccounts[i] = accounts[i];
+		}
+		newAccounts[accounts.length] = newAccount;
+		this.accounts = newAccounts;
+	}
 	
 	/*
 	 * << 과제 아님 >>
 	 * 0.계좌데이타를 인자로받아서 Account[]에추가[OPTION]
 	*/
+	public void addAccount(int no, String owner, int balance, double iyul) {
+		Account newAccount = new Account(no, owner, balance, iyul);
+		/*
+		 * 1.배열크기증가 
+		 * 	- 기존배열보다큰배열생성 
+		 * 	- 기존데이타 옮김
+		 */
+		Account[] newAccounts = new Account[accounts.length + 1];
+		for (int i = 0; i < accounts.length; i++) {
+			newAccounts[i] = accounts[i];
+		}
+		newAccounts[accounts.length] = newAccount;
+		this.accounts = newAccounts;
+	}
 	
 	/*
 	 * 1.은행계좌들 총계좌수출력메쏘드정의
 	 */
 	public void totAccountNumberPrint() {
-		System.out.println(">> 은행계좌들 총계좌수: "+this.accounts.length);
-		
+		System.out.println(">> 은행계좌들 총계좌수: " + this.accounts.length);
 	}
 
 	/*
