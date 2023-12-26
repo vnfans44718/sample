@@ -16,7 +16,7 @@ public class AccountServiceReturnMain {
 		System.out.println("2. AccountServiceReturn객체야 은행계좌들 전체 출력해줘");
 		accountServiceReturn.print();
 		
-		System.out.println("3. AccountServiceReturn객체야 은행계좌들 총잔고를 반환해줘");
+		System.out.println("3. AccountServiceReturn객체야 은행계좌들 총 잔고를 반환해줘");
 		int totBalance = accountServiceReturn.getAccountTotBalance();
 		System.out.println(">> 은행총계좌잔고:" + totBalance);
 		
@@ -54,7 +54,7 @@ public class AccountServiceReturnMain {
 		
 		/*
 		정렬기준(standard) --> 1:번호,2:이름,3:잔고,4:이율 
-	    정렬방법(order)    --> 1:오름차순,2:내림차순
+	    	정렬방법(order)    --> 1:오름차순,2:내림차순
 		 */
 		System.out.println("10. AccountServiceReturn객체야 계좌를 잔고 순으로 오름차순 정렬해줘");
 		accountServiceReturn.sort(3, 1);
@@ -64,17 +64,17 @@ public class AccountServiceReturnMain {
 		accountServiceReturn.sort(3, 2);
 		accountServiceReturn.print();
 		
-		System.out.println("12. AccountServiceReturn야 계좌객체줄게 이름, 잔고, 이율 수정(update)해줘");
+		System.out.println("12. AccountServiceReturn야 계좌 객체 줄게 이름, 잔고, 이율 수정(update)해줘");
 		Account findAccount3 = accountServiceReturn.findByNo(7777);
 		accountServiceReturn.updateAccount(findAccount3);
 		accountServiceReturn.print();
 		
-		System.out.println("13. AccountServiceReturn야 계좌데이타줄게 이름, 잔고, 이율 수정(update)해줘");
+		System.out.println("13. AccountServiceReturn야 계좌 데이터 줄게 이름, 잔고, 이율 수정(update)해줘");
 		Account findAccount4 = accountServiceReturn.findByNo(1113);
 		findAccount4.setAccountData(findAccount4.getNo(), "CAN", 50000, 5.5);
 		accountServiceReturn.print();
 		
-		System.out.println("14. AccountServiceReturn객체야 계좌번호줄게 계좌 삭제한 후 삭제한 계좌 객체 반환해줘[OPTION]");
+		System.out.println("14. AccountServiceReturn객체야 계좌번호 줄게 계좌 삭제한 후 삭제한 계좌 객체 반환해줘[OPTION]");
 		accountServiceReturn.deleteByNo(1112);
 		accountServiceReturn.print();
 	}
