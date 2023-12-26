@@ -199,7 +199,7 @@ public class AccountServiceReturn {
 		 */
 		for (int i = 0; i < accounts.length; i++) {
 			if (accounts[i].getNo() == no) {
-				accounts[i].setBalance(accounts[i].getBalance() + m);
+				accounts[i].ipGum(m);
 				return accounts[i];
 			}
 		}
