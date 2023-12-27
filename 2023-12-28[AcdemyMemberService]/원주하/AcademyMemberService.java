@@ -139,7 +139,7 @@ public class AcademyMemberService {
 		return academyGangsa;
 	}
 
-	public AcademyMember[] academyStaffReturn() {
+	private AcademyMember[] academyStaffReturn() {
 		int count = 0;
 		AcademyMember[] academyStaff = null;
 		for (AcademyMember academyMember : members) {
