@@ -216,7 +216,127 @@ public class AccountServiceReturn {
 	 * 10,11 정렬  standard --> 1:번호,2:이름,3:잔고,4:이율 
 	 *             order    --> 1:오름차순,2:내림차순
 	 */
-	public void sort(int standard, int order) {
+		public void sort(int standard, int order) {
+		switch (standard) {
+		case 1:
+			switch (order) {
+			case 1:
+				for (int j = 0; j < accounts.length; j++) {
+					for (int i = 0; i < accounts.length - 1 - j; i++) {
+						if (accounts[i].getNo() > accounts[i + 1].getNo()) {
+							Account[] tempAccount = new Account[accounts.length];
+							tempAccount[i] = accounts[i];
+							accounts[i] = accounts[i + 1];
+							accounts[i + 1] = tempAccount[i];
+						}
+					}
+				}
+				break;
+
+			case 2:
+				for (int j = 0; j < accounts.length; j++) {
+					for (int i = 0; i < accounts.length - 1 - j; i++) {
+						if (accounts[i].getNo() < accounts[i + 1].getNo()) {
+							Account[] tempAccount = new Account[accounts.length];
+							tempAccount[i] = accounts[i];
+							accounts[i] = accounts[i + 1];
+							accounts[i + 1] = tempAccount[i];
+						}
+					}
+				}
+				break;
+			}
+
+			break;
+
+		case 2:
+			switch (order) {
+			case 1:
+				for (int j = 0; j < accounts.length; j++) {
+					for (int i = 0; i < accounts.length - 1 - j; i++) {
+						if (accounts[i].getOwner().compareTo(accounts[i + 1].getOwner()) > 0) {
+							Account[] tempAccount = new Account[accounts.length];
+							tempAccount[i] = accounts[i];
+							accounts[i] = accounts[i + 1];
+							accounts[i + 1] = tempAccount[i];
+						}
+					}
+				}
+				break;
+
+			case 2:
+				for (int j = 0; j < accounts.length; j++) {
+					for (int i = 0; i < accounts.length - 1 - j; i++) {
+						if (accounts[i].getOwner().compareTo(accounts[i + 1].getOwner()) < 0) {
+							Account[] tempAccount = new Account[accounts.length];
+							tempAccount[i] = accounts[i];
+							accounts[i] = accounts[i + 1];
+							accounts[i + 1] = tempAccount[i];
+						}
+					}
+				}
+				break;
+			}
+			break;
+		case 3:
+			switch (order) {
+			case 1:
+				for (int j = 0; j < accounts.length; j++) {
+					for (int i = 0; i < accounts.length - 1 - j; i++) {
+						if (accounts[i].getBalance() > accounts[i + 1].getBalance()) {
+							Account[] tempAccount = new Account[accounts.length];
+							tempAccount[i] = accounts[i];
+							accounts[i] = accounts[i + 1];
+							accounts[i + 1] = tempAccount[i];
+						}
+					}
+				}
+				break;
+
+			case 2:
+				for (int j = 0; j < accounts.length; j++) {
+					for (int i = 0; i < accounts.length - 1 - j; i++) {
+						if (accounts[i].getBalance() < accounts[i + 1].getBalance()) {
+							Account[] tempAccount = new Account[accounts.length];
+							tempAccount[i] = accounts[i];
+							accounts[i] = accounts[i + 1];
+							accounts[i + 1] = tempAccount[i];
+						}
+					}
+				}
+				break;
+			}
+			break;
+		case 4:
+			switch (order) {
+			case 1:
+				for (int j = 0; j < accounts.length; j++) {
+					for (int i = 0; i < accounts.length - 1 - j; i++) {
+						if (accounts[i].getIyul() > accounts[i + 1].getIyul()) {
+							Account[] tempAccount = new Account[accounts.length];
+							tempAccount[i] = accounts[i];
+							accounts[i] = accounts[i + 1];
+							accounts[i + 1] = tempAccount[i];
+						}
+					}
+				}
+				break;
+
+			case 2:
+				for (int j = 0; j < accounts.length; j++) {
+					for (int i = 0; i < accounts.length - 1 - j; i++) {
+						if (accounts[i].getIyul() < accounts[i + 1].getIyul()) {
+							Account[] tempAccount = new Account[accounts.length];
+							tempAccount[i] = accounts[i];
+							accounts[i] = accounts[i + 1];
+							accounts[i + 1] = tempAccount[i];
+						}
+					}
+				}
+				break;
+			}
+			break;
+		}
 
 	}
 
