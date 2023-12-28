@@ -31,27 +31,24 @@ public class AcademyMemberServiceMain {
 
 		System.out.println("4.AcademyMember 중에서 자바반인  AcademyStudent객체들 배열참조변수반환해줘");
 
-		AcademyMember[] academyJavaStudent = academymembers.membersByBelong("Student", "자바");
+		AcademyMember[] academyJavaStudent = academymembers.membersByBelong(academyStudent[0], "자바");
 		for (int i = 0; i < academyJavaStudent.length; i++) {
-
 			academyJavaStudent[i].print();
 		}
 
 		System.out.println("4.AcademyMember 중에서 영업부서인 AcademyStaff  객체들 배열참조변수반환해줘");
 
-		AcademyMember[] SalesStaff = academymembers.membersByBelong("Staff", "영업");
+		AcademyMember[] SalesStaff = academymembers.membersByBelong(academyStaff[0], "영업");
 		for (int i = 0; i < SalesStaff.length; i++) {
 			SalesStaff[i].print();
 		}
 		System.out.println("4.AcademyMember 중에서 자바과목인 AcademyGangsa 객체들 배열참조변수반환해줘");
-		AcademyMember[] academyJavaGangsa = academymembers.membersByBelong("Gangsa", "자바");
+		AcademyMember[] academyJavaGangsa = academymembers.membersByBelong(academyGangsa[0], "자바");
 		for (int i = 0; i < academyJavaGangsa.length; i++) {
 			academyJavaGangsa[i].print();
 		}
 		System.out.println("---------------------------------------------");
-		System.out.println("5.AcademyMember 중에서 자바반인  AcademyStudent객체들 배열참조변수반환해줘");
-		System.out.println("5.AcademyMember 중에서 영업부서인 AcademyStaff  객체들 배열참조변수반환해줘");
-		System.out.println("5.AcademyMember 중에서 자바과목인 AcademyGangsa 객체들 배열참조변수반환해줘");
+		System.out.println();
 
 	}
 

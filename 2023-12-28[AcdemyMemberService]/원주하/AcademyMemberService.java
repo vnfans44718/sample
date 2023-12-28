@@ -77,17 +77,17 @@ public class AcademyMemberService {
 	 * 3.AcademyMember 중에서 AcademyGangsa객체들 모두반환해줘 [ AcademyMember[] 객체주소반환 ]
 	 */
 
-	public AcademyMember[] returnByMembers(String membertype) {
+	public AcademyMember[] returnByMembers(String memberType) {
 		AcademyMember[] academyMember = null;
-		if (membertype.equals(SORT_BY_STUDENT)) {
+		if (memberType.equals(SORT_BY_STUDENT)) {
 			academyMember = academyStudentReturn();
 		}
 
-		else if (membertype.equals(SORT_BY_GANGSA)) {
+		else if (memberType.equals(SORT_BY_GANGSA)) {
 			academyMember = academyGangsaReturn();
 		}
 
-		else if (membertype.equals(SORT_BY_STAFF)) {
+		else if (memberType.equals(SORT_BY_STAFF)) {
 			academyMember = academyStaffReturn();
 		}
 
@@ -139,7 +139,7 @@ public class AcademyMemberService {
 		return academyGangsa;
 	}
 
-	private AcademyMember[] academyStaffReturn() {
+	public AcademyMember[] academyStaffReturn() {
 		int count = 0;
 		AcademyMember[] academyStaff = null;
 		for (AcademyMember academyMember : members) {
@@ -167,95 +167,30 @@ public class AcademyMemberService {
 	 * 4.AcademyMember 중에서 자바과목인 AcademyGangsa  객체들 배열참조변수반환해줘
 	 */
 
-	public AcademyMember[] membersByBelong(String membertype, String belong) {
+	public AcademyMember[] membersByBelong(AcademyMember returnByMembers, String belong) {
 		AcademyMember[] academyMember = null;
-		if (membertype.equals(SORT_BY_STUDENT)) {
+
+		if (returnByMembers instanceof AcademyStudent) {
+
 			academyMember = academyBanStudent(belong);
+
 		}
 
-		else if (membertype.equals(SORT_BY_GANGSA)) {
+		else if (returnByMembers instanceof AcademyGangsa) {
 			academyMember = academySubjectGangsa(belong);
-		}
 
-		else if (membertype.equals(SORT_BY_STAFF)) {
+		} else if (returnByMembers instanceof AcademyStaff) {
 			academyMember = academyDepartStaff(belong);
+
 		}
 
 		return academyMember;
 
 	}
 
-	private AcademyMember[] academyBanStudent(String belong) {
-		int count = 0;
-		AcademyMember[] academyStudent = null;
-		AcademyStudent tempacademyMember = null;
-		int findcount = 0;
-		for (AcademyMember academyMember : members) {
-
-			if (academyMember instanceof AcademyStudent) {
-				tempacademyMember = (AcademyStudent) academyMember;
-				if (tempacademyMember.getBan().equals(belong)) {
-					count++;
-				}
-			}
-
-			
-
-		}
-
-		academyStudent = new AcademyMember[count];
-
-		for (AcademyMember academyMember : members) {
-
-			if (academyMember instanceof AcademyStudent) {
-				tempacademyMember = (AcademyStudent) academyMember;
-
-			}
-
-			if (tempacademyMember.getBan().equals(belong)) {
-				academyStudent[findcount] = tempacademyMember;
-				findcount++;
-			}
-
-		}
-
-		return academyStudent;
-	}
-
-	private AcademyMember[] academyDepartStaff(String belong) {
-		int count = 0;
-		AcademyMember[] academyStaff = null;
-		AcademyStaff tempacademyMember = null;
-		int findcount = 0;
-		for (AcademyMember academyMember : members) {
-
-			if (academyMember instanceof AcademyStaff) {
-				tempacademyMember = (AcademyStaff) academyMember;
-				if (tempacademyMember.getDepart().equals(belong)) {
-					count++;
-				}
-			}
-
-		}
-
-		academyStaff = new AcademyMember[count];
-
-		for (AcademyMember academyMember : members) {
-
-			if (academyMember instanceof AcademyStaff) {
-				tempacademyMember = (AcademyStaff) academyMember;
-
-			}
-
-			if (tempacademyMember.getDepart().equals(belong)) {
-				academyStaff[findcount] = tempacademyMember;
-				findcount++;
-			}
-
-		}
-
-		return academyStaff;
-	}
+	/*
+	 * 4.AcademyMember 중에서 자바과목인 AcademyGangsa  객체들 배열참조변수반환해줘
+	 */
 
 	private AcademyMember[] academySubjectGangsa(String belong) {
 		int count = 0;
@@ -270,6 +205,10 @@ public class AcademyMemberService {
 					count++;
 				}
 			}
+
+		}
+		if (count == 0) {
+			System.out.println("일치하는 정보가 없습니다.");
 
 		}
 
@@ -293,9 +232,89 @@ public class AcademyMemberService {
 	}
 
 	/*
-	 * 5.AcademyMember 중에서 자바반인   AcademyStudent 객체들 배열참조변수반환해줘[OPTION]
-	 * 5.AcademyMember 중에서 영업부서인 AcademyStaff   객체들 배열참조변수반환해줘[OPTION] 
-	 * 5.AcademyMember 중에서 자바과목인 AcademyGangsa  객체들 배열참조변수반환해줘[OPTION]
+	 * 4.AcademyMember 중에서 자바반인   AcademyStudent 객체들 배열참조변수반환해줘 
 	 */
+	private AcademyMember[] academyBanStudent(String belong) {
+		int count = 0;
+		AcademyMember[] academyStudent = null;
+		AcademyStudent tempacademyMember = null;
+		int findcount = 0;
+		for (AcademyMember academyMember : members) {
+
+			if (academyMember instanceof AcademyStudent) {
+				tempacademyMember = (AcademyStudent) academyMember;
+				if (tempacademyMember.getBan().equals(belong)) {
+					count++;
+				}
+
+			}
+		}
+
+		if (count == 0) {
+			System.out.println("일치하는 정보가 없습니다.");
+
+		}
+
+		academyStudent = new AcademyMember[count];
+
+		for (AcademyMember academyMember : members) {
+
+			if (academyMember instanceof AcademyStudent) {
+				tempacademyMember = (AcademyStudent) academyMember;
+
+			}
+
+			if (tempacademyMember.getBan().equals(belong)) {
+				academyStudent[findcount] = tempacademyMember;
+				findcount++;
+			}
+
+		}
+
+		return academyStudent;
+
+	}
+
+	/*
+	 * 4.AcademyMember 중에서 영업부서인 AcademyStaff   객체들 배열참조변수반환해줘 
+	 */
+	private AcademyMember[] academyDepartStaff(String belong) {
+		int count = 0;
+		AcademyMember[] academyStaff = null;
+		AcademyStaff tempacademyMember = null;
+		int findcount = 0;
+		for (AcademyMember academyMember : members) {
+
+			if (academyMember instanceof AcademyStaff) {
+				tempacademyMember = (AcademyStaff) academyMember;
+				if (tempacademyMember.getDepart().equals(belong)) {
+					count++;
+				}
+
+			}
+		}
+		if (count == 0) {
+			System.out.println("일치하는 정보가 없습니다.");
+
+		}
+		academyStaff = new AcademyMember[count];
+
+		for (AcademyMember academyMember : members) {
+
+			if (academyMember instanceof AcademyStaff) {
+				tempacademyMember = (AcademyStaff) academyMember;
+
+			}
+
+			if (tempacademyMember.getDepart().equals(belong)) {
+				academyStaff[findcount] = tempacademyMember;
+				findcount++;
+			}
+
+		}
+
+		return academyStaff;
+
+	}
 
 }
