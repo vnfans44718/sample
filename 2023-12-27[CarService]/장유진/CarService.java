@@ -35,7 +35,7 @@ public class CarService {
 		// * 2.차량번호 중복체크
 		for (Car car2 : carArray) {
 			if (car2 != null) {
-				if (car2.getNo() == car.getNo()) {
+				if (car2.getNo().equals(car.getNo())) {
 					isSuccess = false;
 					break;
 				} else {
@@ -70,7 +70,7 @@ public class CarService {
 	public Car chulCha(String no, int outTime) {
 		Car outCar = null;
 		for (Car car : carArray) {
-			if (car != null && car.getNo() == no) {
+			if (car != null && car.getNo().equals(no)) {
 				car.setOutTime(outTime);
 				outCar = car;
 			}
