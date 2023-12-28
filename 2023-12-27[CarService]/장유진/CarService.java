@@ -84,7 +84,7 @@ public class CarService {
 	public Car[] findByInTime(int inTime) {
 		int count = 0;
 		for (Car car : carArray) {
-			if (car != null && car.getInTime() >= 8) {
+			if (car != null && car.getInTime() >= inTime) {
 				count++;
 			}
 		}
