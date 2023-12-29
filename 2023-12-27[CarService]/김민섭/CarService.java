@@ -25,8 +25,9 @@ public class CarService {
 	     - 차량번호중복체크
 	*/
 	public boolean ipCha(Car car) {
-		boolean isSuccess1 = false;
-		boolean isSuccess2 = false;
+		boolean isEmpty = false;
+		boolean isDuplicate = false;
+		boolean isSuccess = false;
 		/*
 		 * 1.주차장만차인지체크
 		 * 2.차량번호 중복체크
@@ -35,24 +36,30 @@ public class CarService {
 		// * 1.주차장만차인지체크
 		for (int i = 0; i < carArray.length; i++) {
 			if (carArray[i] == null) {
-
-				isSuccess1 = true;
+				isEmpty = true;
 				break;
-			} else {
-				isSuccess1 = false;
 			}
+
 		}
+		if (!isEmpty) {
+			return isEmpty;
+		}
+
 		for (int i = 0; i < carArray.length; i++) {
 			if (carArray[i] != null && carArray[i].getNo().equals(car.getNo())) {
-				isSuccess2 = false;
+				isDuplicate = true;
 				break;
-			} else {
-				isSuccess2 = true;
+
 			}
 		}
+		if (isDuplicate) {
+			return !isDuplicate;
+		}
+
 		for (int i = 0; i < carArray.length; i++) {
-			if (isSuccess1 && isSuccess2 && carArray[i] == null) {
+			if (carArray[i] == null) {
 				carArray[i] = car;
+				isSuccess = true;
 				break;
 			}
 		}
@@ -64,7 +71,7 @@ public class CarService {
 //			}
 //		}
 
-		return (isSuccess1 && isSuccess2);
+		return isSuccess;
 
 	}
 	/*
