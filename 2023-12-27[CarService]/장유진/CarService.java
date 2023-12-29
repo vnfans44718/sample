@@ -139,9 +139,10 @@ public class CarService {
 	 */
 	public void print() {
 		Car.headerPrint();
-		for (int i = 0; i < carArray.length; i++) {
-			if (carArray[i] != null)
-				carArray[i].print();
+		for (Car car : carArray) {
+			if (car != null) {
+				car.print();
+			}
 		}
 	}
 
