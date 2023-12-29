@@ -54,7 +54,13 @@ public class AccountServiceArrayList {
 		 * 중복이 아니면 accountList에 add하고  호출한클래스에게 true 를 반환해줌[OPTION]
 		 */
 		//accountList.add(account);
-		
+		for (int i=0; i<accountList.size(); i++) {
+			if (accountList.get(i).getNo() == account.getNo()) {
+			return false;
+			}
+		}
+		accountList.add(account);
+		return true;
 	}
 
 	/*
