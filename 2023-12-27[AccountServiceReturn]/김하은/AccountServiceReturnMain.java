@@ -13,8 +13,7 @@ public class AccountServiceReturnMain {
 		accountServiceReturn.print();
 		
 		System.out.println("1.AccountServiceReturn객체야 은행계좌 총계좌수 반환해줘");
-		int totAccountNumber=accountServiceReturn.getTotAccountNumber();
-		System.out.println(">>은행 총계좌수:" + totAccountNumber);
+		System.out.println(">>은행 총계좌수:" + accountServiceReturn.getTotAccountNumber());
 		
 		System.out.println("2.AccountServiceReturn객체야 은행계좌들 전체출력해줘");
 		accountServiceReturn.print();
@@ -89,8 +88,8 @@ public class AccountServiceReturnMain {
 		accountServiceReturn.print();
 		
 		System.out.println("14.AccountServiceReturn객체야 계좌번호줄게 계좌삭제한후 삭제한계좌객체 반환해줘 [OPTION]");
-		Account deleteAccount = accountServiceReturn.deleteByNo(5555);
-		deleteAccount.print();
+		Account deleteAcc = accountServiceReturn.deleteByNo(5555);
+		deleteAcc.print();
 	}
 
 }

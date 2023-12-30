@@ -190,6 +190,7 @@ public class AccountServiceReturn {
 			if (account.getNo() == no) {
 				account.deposit(m);
 				ipgum = account;
+				break;
 			}
 		}
 		return ipgum;
@@ -205,6 +206,7 @@ public class AccountServiceReturn {
 			if (account.getNo() == no) {
 				account.withDraw(m);
 				chulgum = account;
+				break;
 			}
 		}
 		return chulgum;
@@ -339,19 +341,11 @@ public class AccountServiceReturn {
 		for (int i=0, j=0; i<accounts.length; i++) {
 			if (accounts[i] != null) {
 				temps[j] = accounts[i];
-			j++;	
+				j++;	
 			}
 		}
-		temps = accounts;
+		accounts = temps;
 		return deleteAccount;
 	}
 }
-
-
-
-
-
-
-
-
 
