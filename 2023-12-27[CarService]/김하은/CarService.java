@@ -20,34 +20,38 @@ public class CarService {
 	*/
 	public boolean ipCha(Car car) {
 		boolean isSuccess = false;
+		int i = 0;
 		/*
 		 * 1.주차장만차인지체크
 		 * 2.차량번호 중복체크
 		 * 3.입차
 		 */
-		for (int i=0; i<carArray.length; i++) {
+		for (i=0; i<carArray.length; i++) {
 			if (carArray[i] == null) {
 				isSuccess = true;
 				break;
 			}
+		} 
+		if (isSuccess == false) {
+			return isSuccess;
 		}
-
-		for (int i=0; i<carArray.length; i++) {
-			if (carArray[i] != null && carArray[i].getNo().equals(car.getNo())) {
+		
+		for (int j=0; j<carArray.length; j++) {
+			if (carArray[j] != null &&
+					carArray[j].getNo().equals(car.getNo())) {
 				isSuccess = false;
 				break;
-			}else {
-				isSuccess = true;
 			}
 		}
-
-		for (int i=0; i<carArray.length; i++) {
-			if (carArray[i] == null) {
-				carArray[i] = car;
-				break;
-			}
+		if (isSuccess == false) {
+			return isSuccess;
 		}
 
+		if (carArray[i] == null) {
+			carArray[i] = car;
+			isSuccess = true;
+		}
+		else  isSuccess = false;
 		return isSuccess;
 	}
 	/*
