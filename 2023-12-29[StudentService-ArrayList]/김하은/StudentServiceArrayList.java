@@ -51,7 +51,6 @@ public class StudentServiceArrayList {
 	 */
 	public void calculateRank() {
 		for (int i=0; i<studentList.size(); i++) {
-			studentList.get(i).increaseRank();
 			for (int j=0; j<studentList.size(); j++) {
 				if (studentList.get(i).getTot() < studentList.get(j).getTot()) {
 					studentList.get(i).increaseRank();
