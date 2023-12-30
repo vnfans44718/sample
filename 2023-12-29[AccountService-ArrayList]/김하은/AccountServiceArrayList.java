@@ -53,7 +53,6 @@ public class AccountServiceArrayList {
 		 * 중복이면      호출한클래스에게 false
 		 * 중복이 아니면 accountList에 add하고  호출한클래스에게 true 를 반환해줌[OPTION]
 		 */
-		//accountList.add(account);
 		for (int i=0; i<accountList.size(); i++) {
 			if (accountList.get(i).getNo() == account.getNo()) {
 			return false;
@@ -62,6 +61,7 @@ public class AccountServiceArrayList {
 		accountList.add(account);
 		return true;
 	}
+
 
 	/*
 	 * 1.은행계좌들 총계좌수반환메쏘드정의
@@ -150,6 +150,7 @@ public class AccountServiceArrayList {
 			if (account.getNo() == no) {
 				account.withDraw(m);
 				chulgum = account;
+				break;
 			}
 		}
 		return chulgum;
@@ -164,6 +165,7 @@ public class AccountServiceArrayList {
 			if (account.getNo() == no) {
 				account.deposit(m);
 				ipgum = account;
+				break;
 			}
 		}
 		return ipgum;
