@@ -87,7 +87,7 @@ public class CarService {
 
 		for (int i = 0, j = 0; i < carArray.length; i++) {
 			if ((carArray[i] != null) && (carArray[i].getInTime() > inTime)) {
-				findCars[j] = new Car(carArray[i].getNo(), carArray[i].getInTime());
+				findCars[j] = carArray[i];
 				j++;
 			}
 
