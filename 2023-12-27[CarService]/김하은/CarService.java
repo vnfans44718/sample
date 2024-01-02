@@ -32,9 +32,7 @@ public class CarService {
 				break;
 			}
 		} 
-		if (isSuccess == false) {
-			return isSuccess;
-		}
+		if (isSuccess == false)  return isSuccess;
 		
 		for (int j=0; j<carArray.length; j++) {
 			if (carArray[j] != null &&
@@ -43,9 +41,7 @@ public class CarService {
 				break;
 			}
 		}
-		if (isSuccess == false) {
-			return isSuccess;
-		}
+		if (isSuccess == false)  return isSuccess;
 
 		if (carArray[i] == null) {
 			carArray[i] = car;
