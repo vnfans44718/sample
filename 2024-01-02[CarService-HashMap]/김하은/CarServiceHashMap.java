@@ -29,10 +29,11 @@ public class CarServiceHashMap {
 	 */
 	public boolean ipCha(Car inCar) {
 		boolean isSuccess = false;
-		if (carMap.size() != count) {
+		if (carMap.size() < count) {
 			carMap.put(inCar.getNo(), inCar);
 			isSuccess = true;
-		}
+		} 
+		else  isSuccess = false;
 		return isSuccess;
 	}
 
